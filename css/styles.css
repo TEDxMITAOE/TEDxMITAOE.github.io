@@ -1,0 +1,160 @@
+/* index.html CSS */
+@import "bootstrap/css/bootstrap.min.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link:hover {
+	color: #ff0000;
+}
+
+.info {
+    width: 70%;
+    padding-top: 150px;
+}
+
+.book-now-box .book-now {
+    color: red;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.book-now-box {
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-top: 1px solid rgb(255, 0, 0);
+    text-align: center;
+    width: 85px;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 6px;
+}
+
+.Xsymbol {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    height: 500px;
+    width: 460px;
+}
+
+.header {
+    padding-top: 3em;
+    padding-left: 0;
+}
+
+@media (min-width:576px) {
+    .header{
+        margin-left: 105px;
+    }
+}
+
+@media (min-width:768px) {
+    .header{
+        margin-left: 105px;
+    }
+}
+
+@media (min-width:992px) {
+    .header{
+        margin-left: 105px;
+        margin-right: 105px;
+    }
+}
+
+@media (min-width:1200px) {
+    .header{
+        margin-left: 105px;
+        margin-right: 105px;
+    }
+}
+
+@media (min-width:1400px) {
+    .header{
+        margin-left: 105px;
+        margin-right: 105px;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 50px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: red;
+}
+
+.prarambh {
+    background-image: url("../assets/images/Index/Prarambh_background.png");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    position: relative;
+}
+
+.prarambh .container{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0 0;
+}
+.prarambh .container .wrapper{
+    width: 100%;
+    display: flex;
+    animation: slideshow 12s infinite;
+}
+@keyframes slideshow{
+    0%{
+        transform: translateX(0);
+    }
+    12%{
+        transform: translateX(0);
+    }
+    17%{
+        transform: translateX(-170px);
+    }
+    37%{
+        transform: translateX(-170px);
+    }
+    42%{
+        transform: translateX(-340px);
+    }
+    62%{
+        transform: translateX(-340px);
+    }
+    67%{
+        transform: translateX(-510px);
+    }
+    87%{
+        transform: translateX(-510px);
+    }
+    92%{
+        transform: translateX(-680px);
+    }
+    100%{
+        transform: translateX(-680px);
+    }
+}
+
+.round-img {
+    width: 170px;
+    height: 170px;
+}

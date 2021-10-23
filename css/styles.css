@@ -212,6 +212,10 @@ ul {
 .speaker-card-active {
     padding: 40px;
     display: block;
+    height: 34rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    background-color: black;
 }
 
 .previous-event-img {
@@ -460,4 +464,29 @@ ul {
 
 .social-media-side-dock a i {
     color: red;
+}
+
+.back-botton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    left: 2rem;
+    top: 1rem;
+    text-decoration: none;
+}
+.back-botton .back-symbol {
+    border: 1px solid red;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.back-botton .back-word {
+    color: red;
+    font-size: 0.6rem;
+    padding: 6px;
 }

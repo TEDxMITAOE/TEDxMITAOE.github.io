@@ -14,14 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
 
-        .example::-webkit-scrollbar {
-          display: none;
-        }
-        .example {
-          -ms-overflow-style: none;
-        }
-
-        
+      
         .social_handles{
             background-color: black;
             width: 300px;
@@ -36,9 +29,14 @@
         .Xsymbol_contact{
             /* position: absolute;
             top: 1%;
-            left: -4%; */
-            height: 500px;
-            width: 500px;
+            left: -4%;
+            height: 965px;
+            width: auto; */
+            position: absolute;
+            top: 9%;
+            left: -1%;
+            height: 720px;
+            width: 750px;
         }
         i{
             width: 40px;
@@ -47,31 +45,37 @@
             font-size: 35px;
             padding: 35px;
         }
+        /* .div_logo{
+          background-color: white;
+          width: 20px;
+          height: 20px;
+        } */
 
         .back{
-            background-color: black;
+            /* background-color: black; */
             color:red;
-            width: 20px;
-            height: 20px;
+            width: 10px;
+            height: 10px;
             position: absolute;
             left: 755px;
             bottom: 650px;
-            border-radius: 30px;
+            border-radius: 70px;
             border: 3px solid red;
         }
         .back , .back_logo{
           list-style: none;
-          text-align: center ;
-          font-size: 15px;
+          text-align: center ;  
+          font-size: 8px;
           color: white;
 
         }
+        
         
         /* #size{
           font-size: 30px;
           margin-top: 120px;
         } */
-        .back , back_logo:hover{
+        .back , .back_logo:hover{
           border: 2px solid red;
           list-style: none;
           text-decoration: none;
@@ -81,10 +85,10 @@
         }
         
         .class_back{
-            font-size: 14px;
+            font-size: 10px;
             position: absolute;
             top: 80px;
-            left: 780px;
+            left: 790px;
             list-style: none;
             text-decoration: none;
             color: red;
@@ -119,10 +123,10 @@
 
         }
         .class_back{
-            font-size: 11px;
+            font-size: 10px;
             position: absolute;
-            top: 95px;
-            left: 780px;
+            top: 96px;
+            left: 779px;
         }
          a , .class_back:hover{
             color: red;
@@ -138,7 +142,7 @@
 
         }
         .maps{
-          margin-top: -20px;
+          margin-top: -18px;
          }
          .div_social_logo{
            margin-left: 750px;
@@ -151,6 +155,11 @@
         /* .back , .back_logo{
           font-size: 30px;
         } */
+        .back_logo1{
+          font-size: 13px;
+          margin-top: -9px;
+          margin-left: -4px;
+        }
         
 
 
@@ -198,7 +207,6 @@
       </div>
     </div>
 
-    <div class="row">
     <div>
         <img class="Xsymbol_contact" src="assets/images/Index/Xsymbol.png">
     </div>
@@ -219,15 +227,19 @@
         <a href="" class="social_logo"> <i class="fab fa-instagram"></i></a>
         <a href="" class="social_logo"> <i class="fab fa-youtube"></i></a>
       </div>
-    </div>
     
 
-    <div class="angle_div"> 
+    <!-- <div class="angle_div">  -->
         <!-- <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo"> -->
         <!-- <div class="back"><a href="" class="back back_logo" style="color: white;"> < </a></div> -->
-        <div class="circle"><a href="" class="back back_logo " style="color: white;" id="size"><</a></div>
+        <!-- <div class="circle"><a href="" class="back back_logo " style="color: white;" id="size"><</a></div>
         <a href="" class="class_back">BACK</a>
-        </div>
+        </div> -->
+        
+          <div class="div_logo">
+            <a href="" class="back back_logo" style="color: white;"> <p class="back_logo1"> < </p></a>
+            <a href="" class="class_back">BACK</a>
+          </div>
 
     
 

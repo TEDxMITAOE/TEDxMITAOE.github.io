@@ -13,13 +13,25 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        /* * {
+          box-sizing: border-box;
+        } */
+
+        body {
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          background-color: black;
+          width: 100%;
+          height: 100%;
+        }
 
         .Xsymbol_about{
             position: absolute;
-            top: 1%;
-            left: -4%;
-            height: 965px;
-            width: 870px;
+            top: 9%;
+            left: -1%;
+            height: 720px;
+            width: 750px;
+            /* width: auto; */
         }
          .row_event{
             position: absolute;
@@ -70,31 +82,47 @@
         
         }
         .back{
-            background-color: red;
-            color: red;
-            width: 23px;
-            height: 23px;
+            background-color: black;
+            color:red;
+            width: 20px;
+            height: 20px;
             position: absolute;
             left: 360px;
-            bottom: 650px;
+            bottom: 563px;
             border-radius: 50px;
+            border: 3px solid red;
+        }
+        .back , .back_logo{
+          list-style: none;
+          text-align: center ;
+          font-size: 12px;
+          color: white;
 
         }
+        .back , .back_logo:hover{
+          border: 2px solid red;
+          list-style: none;
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          
+        }
+        
         .class_back{
-            font-size: 14px;
-            position: absolute;
-            top: 190px;
-            left: 387px;
-        }
-         a , .class_back:hover{
-            color: red;
-            background-color: black ;
-    
-        }
-        .col-1{
-            display: block;
-            /* background-color: white; */
-            width: 500px;
+          font-size: 11px;
+          position: absolute;
+          top: 195px;
+          left: 385px;
+      }
+        a , .class_back:hover{
+          color: red;
+          background-color: black ;
+          border: black;
+  
+      }
+      .col-1{
+          display: inline-block;
+          width: 800px;
         }
 
       
@@ -150,8 +178,7 @@
             <div class="col-1">
                 <h2>About<span> EVENT</span></h2>
                 <a href=""> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, minima
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, 
-                    enim dolorum vel repellat blanditiis </p></a>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,  enim dolorum vel repellat blanditiis </p></a>
 
                  <button class="know-more btn danger"><a href="">KNOW MORE</a></button>
             </div>
@@ -162,8 +189,9 @@
         </div>
 
         <div> 
-            <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo">
-            <a href="" class="class_back">Back</a>
+            <!-- <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo"> -->
+            <div><a href="" class="back back_logo"><</a></div>
+            <a href="" class="class_back">BACK</a>
             </div>
 
     </body>

@@ -1,6 +1,13 @@
 /* index.html CSS */
 @import "bootstrap/css/bootstrap.min.css";
 
+@font-face {
+    font-family: 'Samarkan Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samarkan Normal'), url('../assets/fonts/SAMARN__.woff') format('woff');
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -17,13 +24,9 @@ ul {
   list-style: none;
 }
 
-.nav-link:hover {
-	color: #ff0000;
-}
-
 .info {
     width: 70%;
-    padding-top: 150px;
+    padding-top: 10rem;
 }
 
 .book-now-box .book-now {
@@ -44,64 +47,52 @@ ul {
 
 .Xsymbol {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 22%;
     height: 500px;
     width: 460px;
 }
 
-.header {
-    padding-top: 3em;
-    padding-left: 0;
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 50px;
+    height: 50%;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-@media (min-width:576px) {
-    .header{
-        margin-left: 105px;
-    }
+.nav-item {
+    overflow: hidden;
+    height: 50%;
 }
 
-@media (min-width:768px) {
-    .header{
-        margin-left: 105px;
-    }
+.nav-animation {
+    display: none;
+    color: red;
 }
 
 @media (min-width:992px) {
-    .header{
-        margin-left: 105px;
-        margin-right: 105px;
+    .nav-animation {
+        display: block;
+    }    
+}
+
+@media (max-width:991px) {
+    .nav-item {
+        padding: 1.5rem;
     }
 }
 
-@media (min-width:1200px) {
-    .header{
-        margin-left: 105px;
-        margin-right: 105px;
-    }
-}
-
-@media (min-width:1400px) {
-    .header{
-        margin-left: 105px;
-        margin-right: 105px;
-    }
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    padding-left: 50px;
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.50);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover, 
-.navbar-dark .navbar-nav .nav-link:focus {
-    color: red;
+.navbar-dark .navbar-nav .nav-link:hover {
+    transform: translateY(-15px);
 }
 
 .prarambh {
     background-image: url("../assets/images/Index/Prarambh_background.png");
     height: 600px;
+    width: 660px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 600px 600px;
@@ -251,4 +242,222 @@ ul {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.custom-btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: red;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 11px;
+  }
+
+.custom-btn:hover {
+    color: white;
+}
+
+  /**** BTN No. 5 ****/
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-5 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-5:before,
+  .btn-5:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 0, 0);
+    transition: all 0.3s ease;
+  }
+  .btn-5:before {
+    height: 50%;
+    width: 2px;
+  }
+  .btn-5:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-5:hover:before {
+    height: 100%;
+  }
+  .btn-5:hover:after {
+    width: 100%;
+  }
+  .btn-5 span:before,
+  .btn-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgb(255, 0, 0);
+    transition: all 0.3s ease;
+  }
+  .btn-5 span:before {
+    width: 2px;
+    height: 50%;
+  }
+  .btn-5 span:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-5 span:hover:before {
+    height: 100%;
+  }
+  .btn-5 span:hover:after {
+    width: 100%;
+  }
+
+.prarambh-word {
+    font-family: 'Samarkan Normal';
+    font-size: 70px;
+    position: absolute;
+    top: 272px;
+    left: 198px;
+}
+
+.round-img-hover {
+    position: absolute;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 90px;
+    height: 90px;
+    width: 90px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 250px;
+}
+
+.round-img-box {
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.round-img-hover:hover .round-img-box {
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+.round-img-sub-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub-box-1 {
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.sub-box-2 {
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.sub-box-3 {
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.sub-box-4 {
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.round-img-red-box {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-red-box {
+    top: 17px;
+    left: 17px;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+.round-img-info {
+    left: 68px;
+    position: relative;
+}
+
+.round-img-info h6 {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-info h6 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.round-img-info p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-info p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.social-media-side-dock {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 39vh;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.social-media-side-dock a i {
+    color: red;
 }

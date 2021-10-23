@@ -11,49 +11,58 @@
     <link rel="icon" href="assets/images/logo/TEDxMITAOE_Logo_Black.png" type="image/png">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-  <div class="row" style="margin: 0px;">
-    <div class="col-lg-12">
-      <nav class="navbar navbar-expand-md navbar-dark header" >
-        <!-- Brand -->
-        <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
-          <div style="font-size: 21.5px;"><font style="color: red; font-weight: 800;">TED<sup>x</sup></font>MITAOE</div><br>
-          <div style="font-size: 6.8px;"><font style="color: red;">x</font> = independently organised TED event</div>
-        </a>
-      
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">ABOUT EVENT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SPEAKERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sponsors.html">SPONSERS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">MEET THE TEAM</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="history.html">PREVIOUS EVENTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+    <div class="container">
+    <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
+      <div style="font-size: 21.5px;"><font style="color: red; font-weight: 800;">TED<sup>x</sup></font>MITAOE</div><br>
+      <div style="font-size: 6.8px;"><font style="color: red;">x</font> = independently organised TED event</div>
+    </a>
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#tedx" aria-controls="tedx" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" onclick="toggleNavBar();"></span>
+    </button>
+  
+    <div class="navbar-collapse collapse justify-content-end" id="tedx">
+      <ul class="navbar-nav mt-2">
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="index.html"><div>ABOUT EVENT</div><div class="nav-animation">ABOUT EVENT</div></a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="#"><div>SPEAKERS</div><div class="nav-animation">SPEAKERS</div></a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="sponsors.html"><div>SPONSERS</div><div class="nav-animation">SPONSERS</div></a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="team.html"><div>MEET THE TEAM</div><div class="nav-animation">MEET THE TEAM</div></a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="history.html"><div>PREVIOUS EVENTS</div><div class="nav-animation">PREVIOUS EVENTS</div></a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-item">
+          <a class="nav-link" href="contact.html"><div>CONTACT US</div><div class="nav-animation">CONTACT US</div></a>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
-    <div class="row header" style="justify-content: space-between;">
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row" style="justify-content: space-between; margin-top: 3rem;">
         <div class="col-lg-3" style="padding: 0px">
           <div class="row" style="justify-content: space-between; margin: 0px;">
             <div class="speaker-container" onclick="displaySpeaker(1);">
@@ -96,8 +105,14 @@
             </div>
           </div>
         </div>
-        <img class="Xsymbol" style="top: 23%; left: 26%;" src="assets/images/Index/Xsymbol.png">
-        <div class="col-lg-6">
+        <img class="Xsymbol" style="height: 55rem; width: auto; top: -2%; left: 17%; z-index: -1;" src="assets/images/Index/Xsymbol.png">
+        <a href="index.html" style="width: auto; text-decoration: none;">
+          <div class="back-botton">
+            <div class="back-symbol"><</div>
+            <div class="back-word">BACK</div>
+          </div>
+        </a>
+        <div class="col-lg-7">
           <div id="1" class="speaker-card-active">
             <div class="speaker-card-title">
               <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
@@ -172,6 +187,8 @@
         </div>
       </div>
     </div>
+  </div>
+  </div>
     <!-- Script Files -->
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>

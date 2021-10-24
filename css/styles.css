@@ -51,6 +51,7 @@ ul {
     left: 22%;
     height: 500px;
     width: 460px;
+    z-index: -1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -474,6 +475,7 @@ ul {
     left: 2rem;
     top: 1rem;
     text-decoration: none;
+    height: 2rem;
 }
 .back-botton .back-symbol {
     border: 1px solid red;
@@ -489,4 +491,72 @@ ul {
     color: red;
     font-size: 0.6rem;
     padding: 6px;
+}
+
+.partner-box {
+    border: 1px solid red;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 6px 17px -2px red;
+    background-color: black;
+    margin-right: 2rem;
+}
+
+.partner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.partner img {
+    width: 5rem;
+}
+
+.partner:hover .animation{
+    transform: translateY(-1.4rem);
+}
+
+.partner-container {
+    height: 1.4rem;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    margin-top: 1rem;
+}
+
+.partner .partner-container .animation {
+    transition: all 0.5s;
+}
+
+.partner-card {
+    display: none;
+}
+
+.partner-card-active {
+    padding: 3rem 5rem;
+    display: block;
+    height: 27rem;
+    margin-top: 4rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+.partner-card-img {
+    box-shadow: 0 0 0rem 0.02rem white;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.partner-card-img img{
+    width: 100%;
+}
+
+.partner-card-info{
+    font-size: 12px;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
 }

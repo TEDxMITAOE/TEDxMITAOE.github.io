@@ -463,6 +463,10 @@ ul {
     line-height: 1.9;
 }
 
+.social-media-side-dock a {
+    width: fit-content;
+}
+
 .social-media-side-dock a i {
     color: red;
 }

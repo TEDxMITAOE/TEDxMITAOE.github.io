@@ -13,51 +13,85 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
+
+      
         .social_handles{
             background-color: black;
             width: 300px;
             height: 50px;
             display: inline;
             position: relative  ;
-            left: 850px;
+            left: 700px;
             bottom: -100px;
             
 
         }
         .Xsymbol_contact{
-            position: absolute;
+            /* position: absolute;
             top: 1%;
             left: -4%;
             height: 965px;
-            width: 870px;
+            width: auto; */
+            position: absolute;
+            top: 9%;
+            left: -1%;
+            height: 720px;
+            width: 750px;
         }
         i{
             width: 40px;
             color: red;
-            height: 40px;
+            height: 20px;
             font-size: 35px;
-            padding: 50px;
+            padding: 35px;
         }
-        
+        /* .div_logo{
+          background-color: white;
+          width: 20px;
+          height: 20px;
+        } */
+
         .back{
-            background-color: red;
-            color: white;
-            width: 23px;
-            height: 23px;
+            /* background-color: black; */
+            color:red;
+            width: 10px;
+            height: 10px;
             position: absolute;
             left: 755px;
-            bottom: 690px;
-            border-radius: 50px;
+            bottom: 650px;
+            border-radius: 70px;
+            border: 3px solid red;
+        }
+        .back , .back_logo{
+          list-style: none;
+          text-align: center ;  
+          font-size: 8px;
+          color: white;
 
         }
+        
+        
+        /* #size{
+          font-size: 30px;
+          margin-top: 120px;
+        } */
+        .back , .back_logo:hover{
+          border: 2px solid red;
+          list-style: none;
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          
+        }
+        
         .class_back{
-            font-size: 14px;
+            font-size: 10px;
             position: absolute;
-            top: 140px;
-            left: 777px;
+            top: 80px;
+            left: 790px;
             list-style: none;
-            color: red;
             text-decoration: none;
+            color: red;
         }
         .top ,a{
             display: inline-block;
@@ -73,7 +107,7 @@
         a , .class_back:hover{
             color: red;
             background-color: black ;
-    
+            border: black;
         }
         .top , a:hover{
             color: red;
@@ -85,12 +119,62 @@
             position: relative;
             left: -10px;
             top: -8px;
+            margin-left: 30px ;
 
+        }
+        .class_back{
+            font-size: 10px;
+            position: absolute;
+            top: 96px;
+            left: 779px;
+        }
+         a , .class_back:hover{
+            color: red;
+            background-color: black ;
+            border: black;
+    
+        }
+        .social_logo{
+          width: 90px;
+          padding: 2px;
+          margin-top: -30px;
+          left: -20px;
+
+        }
+        .maps{
+          margin-top: -18px;
+         }
+         .div_social_logo{
+           margin-left: 750px;
+           margin-top: 100px;
+         }
+        .angle_div , .circle{
+          background-color: white;
+          
+        }
+        /* .back , .back_logo{
+          font-size: 30px;
+        } */
+        .back_logo1{
+          font-size: 13px;
+          margin-top: -9px;
+          margin-left: -4px;
         }
         
 
 
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B8L4R2LFQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8B8L4R2LFQ');
+    </script>
+    
 </head>
 <body>
   <div class="row">
@@ -143,20 +227,30 @@
             <a href=""> <i class="fal fa-envelope"></i></a><a href="" class="mail">tedx@mitaoe.ac.in</a>
             <br>
             <!-- <hr> -->
-            <a href=""> <i class="far fa-map"></i></a> <a href="" class="mail"> <span> <b>MIT</b></span> Academy of Engineering, Alandi</a>
+            <a href="" class="maps map_icon"> <i class="far fa-map" id="mapp_icon"></i></a> <a href="" class="mail maps"> <span> <b>MIT</b></span> Academy of Engineering, Alandi</a>
             
-        </div>
-        <br><br>
-        <a href=""> <i class="fab fa-twitter"></i></a>
-        <a href=""> <i class="fab fa-facebook-f"></i></a>
-        <a href=""> <i class="fab fa-instagram"></i></a>
-        <a href=""> <i class="fab fa-youtube"></i></a>
-    </div>
+        </div >
+      </div>
+        <br><br><br>
+        <div class="div_social_logo">
+        <a href="" class="social_logo"> <i class="fab fa-twitter"></i></a>
+        <a href="" class="social_logo"> <i class="fab fa-facebook-f"></i></a>
+        <a href="" class="social_logo"> <i class="fab fa-instagram"></i></a>
+        <a href="" class="social_logo"> <i class="fab fa-youtube"></i></a>
+      </div>
+    
 
-    <div> 
-        <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo">
-        <a href="" class="class_back">Back</a>
-        </div>
+    <!-- <div class="angle_div">  -->
+        <!-- <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo"> -->
+        <!-- <div class="back"><a href="" class="back back_logo" style="color: white;"> < </a></div> -->
+        <!-- <div class="circle"><a href="" class="back back_logo " style="color: white;" id="size"><</a></div>
+        <a href="" class="class_back">BACK</a>
+        </div> -->
+        
+          <div class="div_logo">
+            <a href="" class="back back_logo" style="color: white;"> <p class="back_logo1"> < </p></a>
+            <a href="" class="class_back">BACK</a>
+          </div>
 
     
 

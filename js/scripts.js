@@ -7,6 +7,15 @@ function displaySpeaker(SpeakerId){
     PreviousSpeakerCardIndex = SpeakerId;
 }
 
+let PreviousPartnerCardIndex = 1;
+function displayPartner(PartnerId){
+    let element = document.getElementById(PreviousPartnerCardIndex);
+    element.classList.replace("partner-card-active","partner-card");
+    element = document.getElementById(PartnerId);
+    element.classList.replace("partner-card","partner-card-active");
+    PreviousPartnerCardIndex = PartnerId;
+}
+
 function toggleNavBar(){
     let NavList = document.getElementById("tedx");
     let NavButton = document.getElementsByClassName("navbar-toggler")[0];

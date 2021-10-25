@@ -58,7 +58,8 @@ ul {
     padding-left: 50px;
     height: 50%;
     font-size: 10px;
-    color: rgba(134, 92, 92, 0.5);
+    /* color: rgba(134, 92, 92, 0.5); */
+    color: white;
     transition: all 0.3s;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -499,10 +500,10 @@ ul {
 }
 
 .partner-box {
-    border: 0.0625em solid red;
+    border: 1px solid red;
     border-radius: 2rem;
     padding: 1rem;
-    box-shadow: 0.3125em 0.375em 1em -0.125em red;
+    box-shadow: 5px 5px 16px -2px red;
     background-color: black;
     margin-right: 2rem;
 }
@@ -543,7 +544,8 @@ ul {
     display: block;
     height: 27rem;
     margin-top: 4rem;
-    border: 0.625em solid red;
+    border: 3px solid red;
+    box-shadow: 5px 5px 16px -2px red;
     border-radius: 2rem;
     background-color: black;
 }
@@ -560,7 +562,7 @@ ul {
 }
 
 .partner-card-info{
-    font-size: 0.75em;
+    font-size: 12px;
     margin-top: 2rem;
     width: 100%;
     text-align: center;

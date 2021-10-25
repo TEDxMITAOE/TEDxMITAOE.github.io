@@ -32,36 +32,36 @@ ul {
 .book-now-box .book-now {
     color: red;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 0.6875em;
 }
 
 .book-now-box {
-    border-bottom: 1px solid rgb(255, 0, 0);
-    border-top: 1px solid rgb(255, 0, 0);
+    border-bottom: 0.0625em solid rgb(255, 0, 0);
+    border-top: 0.0625em solid rgb(255, 0, 0);
     text-align: center;
     width: 85px;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 6px;
+    margin-top: 1.5625em;
+    margin-left: 1.25em;
+    padding: 0.375em;
 }
 
 .Xsymbol {
     position: absolute;
-    top: 20%;
-    left: 22%;
-    height: 500px;
-    width: 460px;
+    top: 10%;
+    left: 12%;
+    height: 25em;
+    width: 22.5em;
     z-index: -1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    padding-left: 50px;
+    padding-left: 3.125em;
     height: 50%;
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.625em;
+    color: rgba(134, 92, 92, 0.5);
     transition: all 0.3s;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0em;
+    padding-bottom: 0em;
 }
 
 .nav-item {
@@ -74,35 +74,35 @@ ul {
     color: red;
 }
 
-@media (min-width:992px) {
+@media (min-width:62em) {
     .nav-animation {
         display: block;
     }    
 }
 
-@media (max-width:991px) {
+@media (max-width:61.9375em) {
     .nav-item {
         padding: 1.5rem;
     }
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    transform: translateY(-15px);
+    transform: translateY(-0.9375em);
 }
 
 .prarambh {
     background-image: url("../assets/images/Index/Prarambh_background.png");
-    height: 600px;
-    width: 660px;
+    height: 37.5em;
+    width: 41.25em;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 600px 600px;
+    background-size: 37.5em 37.5em;
     position: relative;
 }
 
 .prarambh .container{
-    width: 170px;
-    height: 170px;
+    width: 10.625em;
+    height: 10.625em;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
@@ -121,72 +121,72 @@ ul {
         transform: translateX(0);
     }
     17%{
-        transform: translateX(-170px);
+        transform: translateX(-10.625em);
     }
     37%{
-        transform: translateX(-170px);
+        transform: translateX(-10.625em);
     }
     42%{
-        transform: translateX(-340px);
+        transform: translateX(-21.25px);
     }
     62%{
-        transform: translateX(-340px);
+        transform: translateX(-21.25em);
     }
     67%{
-        transform: translateX(-510px);
+        transform: translateX(-31.875em);
     }
     87%{
-        transform: translateX(-510px);
+        transform: translateX(-31-31.875em);
     }
     92%{
-        transform: translateX(-680px);
+        transform: translateX(-42.5em);
     }
     100%{
-        transform: translateX(-680px);
+        transform: translateX(-42.5em);
     }
 }
 
 .round-img {
-    width: 170px;
-    height: 170px;
+    width: -10.625em;
+    height: -10.625em;
 }
 
 .speaker-img-wrapper {
-    width: 120px;
-    height: 120px;
+    width: 7.5em;
+    height: 7.5em;
     border-radius: 50%;
-    border: 1.5px solid white;
+    border: 0.09375em solid white;
     overflow: hidden;
 }
 
 .speaker-img {
-    width: 120px;
-    height: 120px;
+    width: 7.5em;
+    height: 7.5em;
 }
 
 .speaker-name {
-    font-size: 12px;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    font-size: 0.75em;
+    margin-top: 0.625em;
+    padding-bottom: 0.625em;
 }
 
 .speaker-container {
     text-align: center;
-    width: 120px;
+    width: 0.75em;
     padding: 0 0;
 }
 
 .speaker-card-img {
-    border-radius: 10px;
-    box-shadow: 0 0 10px red;
-    width: 200px;
-    height: 200px;
+    border-radius: 0.625em;
+    box-shadow: 0 0 0.625em red;
+    width: 12.5em;
+    height: 12.5em;
     overflow: hidden;
 }
 
 .speaker-card-img img{
-    width: 200px;
-    height: 200px;
+    width: 12.5em;
+    height: 12.5em;
 }
 
 .speaker-card-title{
@@ -196,14 +196,14 @@ ul {
 }
 
 .speaker-card-name {
-    margin-left: 40px;
+    margin-left: 2.5em;
     color: red;
-    font-size: 50px;
+    font-size: 2.5em;
 }
 
 .speaker-card-info{
-    font-size: 12px;
-    margin-top: 40px;
+    font-size: 0.75em;
+    margin-top: 2.5em;
 }
 
 .speaker-card {
@@ -211,10 +211,10 @@ ul {
 }
 
 .speaker-card-active {
-    padding: 40px;
+    padding: 2.5em;
     display: block;
     height: 34rem;
-    border: 1px solid red;
+    border: 0.0625em solid red;
     border-radius: 2rem;
     background-color: black;
 }
@@ -238,8 +238,8 @@ ul {
 .event-button a {
     text-decoration: none;
     color: red;
-    border: 1px solid red;
-    padding: 5px;
+    border: 0.625em solid red;
+    padding: 0.3125em;
 }
 
 .previous-event-card {
@@ -250,7 +250,7 @@ ul {
 }
 
 .custom-btn {
-    padding: 10px 25px;
+    padding: 0.625em 1.5625em;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     background: transparent;
@@ -260,9 +260,9 @@ ul {
     position: relative;
     display: inline-block;
     color: red;
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 11px;
+    margin-top: 1.875em;
+    margin-left: 1.875em;
+    font-size: 0.6875em;
   }
 
 .custom-btn:hover {
@@ -271,9 +271,9 @@ ul {
 
   /**** BTN No. 5 ****/
 .btn-5 {
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
+    width: 8.125em;
+    height: 2.5em;
+    line-height: 2.625em;
     padding: 0;
     border: none;
   }
@@ -294,11 +294,11 @@ ul {
   }
   .btn-5:before {
     height: 50%;
-    width: 2px;
+    width: 0.125em;
   }
   .btn-5:after {
     width: 20%;
-    height: 2px;
+    height: 0.125em;
   }
   .btn-5:hover:before {
     height: 100%;
@@ -316,12 +316,12 @@ ul {
     transition: all 0.3s ease;
   }
   .btn-5 span:before {
-    width: 2px;
+    width: 0.125em;
     height: 50%;
   }
   .btn-5 span:after {
     width: 20%;
-    height: 2px;
+    height: 0.125em;
   }
   .btn-5 span:hover:before {
     height: 100%;
@@ -332,19 +332,19 @@ ul {
 
 .prarambh-word {
     font-family: 'Samarkan Normal';
-    font-size: 70px;
+    font-size: 4.375em;
     position: absolute;
-    top: 272px;
-    left: 198px;
+    top: 17em;
+    left: 12.375em;
 }
 
 .round-img-hover {
     position: absolute;
-    padding: 25px;
+    padding: 1.5625em;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 90px;
-    height: 90px;
-    width: 90px;
+    border-radius: 5.625em;
+    height: 5.625em;
+    width: 5.625em;
     text-decoration: none;
     overflow: hidden;
     transition: all 0.5s;
@@ -352,27 +352,27 @@ ul {
 
 .round-img-hover:hover {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 250px;
+    width: 15.625em;
 }
 
 .round-img-box {
-    height: 40px;
-    width: 40px;
+    height: 2.5em;
+    width: 2.5em;
     transform: rotate(45deg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.5s;
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 1.5625em;
+    left: 1.5625em;
 }
 
 .round-img-hover:hover .round-img-box {
-    height: 50px;
-    width: 50px;
-    top: 20px;
-    left: 20px;
+    height: 3.125em;
+    width: 3.125em;
+    top: 1.25em;
+    left: 1.25em;
 }
 
 .round-img-sub-box {
@@ -382,48 +382,49 @@ ul {
 }
 
 .sub-box-1 {
-    height: 8px;
-    width: 8px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
+    height: 0.5em;
+    width: 0.5em;
+    border-top: 0.125em solid white;
+    border-left: 0.125em solid white;
 }
 
 .sub-box-2 {
-    height: 8px;
-    width: 8px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    height: 0.5em;
+    width: 0.5em;
+    border-top: 0.125em solid white;
+    border-right: 0.125em
+    solid white;
 }
 
 .sub-box-3 {
-    height: 8px;
-    width: 8px;
-    border-bottom: 2px solid white;
-    border-left: 2px solid white;
+    height: 0.5em;
+    width: 0.5em;
+    border-bottom: 0.125em solid white;
+    border-left: 0.125em solid white;
 }
 
 .sub-box-4 {
-    height: 8px;
-    width: 8px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
+    height: 0.5em;
+    width: 0.5em;
+    border-bottom: 0.125em solid white;
+    border-right: 0.125em solid white;
 }
 
 .round-img-red-box {
     background-color: rgba(255, 0, 0, 0.5);
     position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 20px;
-    width: 20px;
+    top: 0.625em;
+    left: 0.625em;
+    height: 1.25em;
+    width: 1.25em;
     transition: all 0.5s;
 }
 
 .round-img-hover:hover .round-img-red-box {
-    top: 17px;
-    left: 17px;
-    height: 15px;
-    width: 15px;
+    top: 1.0625em;
+    left: 1.0625em;
+    height: 0.9375em;
+    width: 0.9375em;
     background-color: rgba(255, 0, 0, 0.9);
 }
 
@@ -433,7 +434,7 @@ ul {
 }
 
 .round-img-info h6 {
-    font-size: 10px;
+    font-size: 0.625em;
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
 }
@@ -443,7 +444,7 @@ ul {
 }
 
 .round-img-info p {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
 }
@@ -482,7 +483,7 @@ ul {
     height: 2rem;
 }
 .back-botton .back-symbol {
-    border: 1px solid red;
+    border: 0.0625em solid red;
     border-radius: 50%;
     color: white;
     font-size: 1rem;
@@ -494,14 +495,14 @@ ul {
 .back-botton .back-word {
     color: red;
     font-size: 0.6rem;
-    padding: 6px;
+    padding: 0.375em;
 }
 
 .partner-box {
-    border: 1px solid red;
+    border: 0.0625em solid red;
     border-radius: 2rem;
     padding: 1rem;
-    box-shadow: 5px 6px 17px -2px red;
+    box-shadow: 0.3125em 0.375em 1em -0.125em red;
     background-color: black;
     margin-right: 2rem;
 }
@@ -542,7 +543,7 @@ ul {
     display: block;
     height: 27rem;
     margin-top: 4rem;
-    border: 1px solid red;
+    border: 0.625em solid red;
     border-radius: 2rem;
     background-color: black;
 }
@@ -559,7 +560,7 @@ ul {
 }
 
 .partner-card-info{
-    font-size: 12px;
+    font-size: 0.75em;
     margin-top: 2rem;
     width: 100%;
     text-align: center;

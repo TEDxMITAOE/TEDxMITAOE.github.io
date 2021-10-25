@@ -36,8 +36,8 @@ ul {
 }
 
 .book-now-box {
-    border-bottom: 1px solid rgb(255, 0, 0);
-    border-top: 1px solid rgb(255, 0, 0);
+    border-bottom: 11px solid rgb(255, 0, 0);
+    border-top: 11px solid rgb(255, 0, 0);
     text-align: center;
     width: 85px;
     margin-top: 25px;
@@ -47,10 +47,10 @@ ul {
 
 .Xsymbol {
     position: absolute;
-    top: 20%;
-    left: 22%;
-    height: 500px;
-    width: 460px;
+    top: 10%;
+    left: 12%;
+    height: 400px;
+    width: 360px;
     z-index: -1;
 }
 
@@ -58,7 +58,8 @@ ul {
     padding-left: 50px;
     height: 50%;
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(134, 92, 92, 0.5); */
+    color: white;
     transition: all 0.3s;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -80,7 +81,7 @@ ul {
     }    
 }
 
-@media (max-width:991px) {
+@media (max-width:990px) {
     .nav-item {
         padding: 1.5rem;
     }
@@ -96,7 +97,7 @@ ul {
     width: 660px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 600px 600px;
+    background-size: 600px  600px;
     position: relative;
 }
 
@@ -166,13 +167,13 @@ ul {
 
 .speaker-name {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 12px;
     padding-bottom: 10px;
 }
 
 .speaker-container {
     text-align: center;
-    width: 120px;
+    width: 12px;
     padding: 0 0;
 }
 
@@ -198,7 +199,7 @@ ul {
 .speaker-card-name {
     margin-left: 40px;
     color: red;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .speaker-card-info{
@@ -213,7 +214,7 @@ ul {
 .speaker-card-active {
     padding: 40px;
     display: block;
-    height: 34rem;
+    height: 544px;
     border: 1px solid red;
     border-radius: 2rem;
     background-color: black;
@@ -250,7 +251,7 @@ ul {
 }
 
 .custom-btn {
-    padding: 10px 25px;
+    padding: 1px 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     background: transparent;
@@ -392,7 +393,8 @@ ul {
     height: 8px;
     width: 8px;
     border-top: 2px solid white;
-    border-right: 2px solid white;
+    border-right: 2px
+    solid white;
 }
 
 .sub-box-3 {
@@ -501,7 +503,7 @@ ul {
     border: 1px solid red;
     border-radius: 2rem;
     padding: 1rem;
-    box-shadow: 5px 6px 17px -2px red;
+    box-shadow: 5px 5px 16px -2px red;
     background-color: black;
     margin-right: 2rem;
 }
@@ -542,7 +544,8 @@ ul {
     display: block;
     height: 27rem;
     margin-top: 4rem;
-    border: 1px solid red;
+    border: 3px solid red;
+    box-shadow: 5px 5px 16px -2px red;
     border-radius: 2rem;
     background-color: black;
 }

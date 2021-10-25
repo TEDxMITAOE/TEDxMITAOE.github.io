@@ -881,7 +881,9 @@ progress {
     }
 }
 
-@media (min-width:1400px) {
+@media { min-width:1400px
+    overflow-y: hidden;
+}{
     .col-xxl {
         flex: 1 0 0%
     }

@@ -16,15 +16,9 @@
 
       
         .social_handles{
-            background-color: black;
-            width: 300px;
-            height: 50px;
-            display: inline;
+          margin-top: 3%;
             position: relative  ;
-            left: 700px;
-            bottom: -100px;
-            
-
+            left: 50%;
         }
         .Xsymbol_contact{
             /* position: absolute;
@@ -33,10 +27,12 @@
             height: 965px;
             width: auto; */
             position: absolute;
+            margin-top: .5%  ;
+            margin-left: 1.5%;
             top: 9%;
             left: -1%;
-            height: 720px;
-            width: 750px;
+            height: 90%;
+            width: 43.575%;
         }
         i{
             width: 40px;
@@ -45,20 +41,16 @@
             font-size: 35px;
             padding: 35px;
         }
-        /* .div_logo{
-          background-color: white;
-          width: 20px;
-          height: 20px;
-        } */
+        
 
         .back{
             /* background-color: black; */
             color:red;
             width: 10px;
             height: 10px;
-            position: absolute;
+            /* position: absolute;
             left: 755px;
-            bottom: 650px;
+            bottom: 650px; */
             border-radius: 70px;
             border: 3px solid red;
         }
@@ -85,13 +77,12 @@
         }
         
         .class_back{
-            font-size: 10px;
-            position: absolute;
-            top: 80px;
-            left: 790px;
+            font-size: 13px;
             list-style: none;
             text-decoration: none;
             color: red;
+            padding:0 !important;
+            padding-left: 3px !important;
         }
         .top ,a{
             display: inline-block;
@@ -117,23 +108,8 @@
         }
         .top , .mail{
             position: relative;
-            left: -10px;
-            top: -8px;
-            margin-left: 30px ;
-
         }
-        .class_back{
-            font-size: 10px;
-            position: absolute;
-            top: 96px;
-            left: 779px;
-        }
-         a , .class_back:hover{
-            color: red;
-            background-color: black ;
-            border: black;
-    
-        }
+      
         .social_logo{
           width: 90px;
           padding: 2px;
@@ -144,10 +120,7 @@
         .maps{
           margin-top: -18px;
          }
-         .div_social_logo{
-           margin-left: 750px;
-           margin-top: 100px;
-         }
+         
         .angle_div , .circle{
           background-color: white;
           
@@ -160,8 +133,15 @@
           margin-top: -9px;
           margin-left: -4px;
         }
-        
 
+        .div_social_logo{
+          margin-left: 20px;
+        }
+        
+        body{
+          flex: none;
+          overflow: hidden;
+        }
 
     </style>
 
@@ -177,6 +157,9 @@
     
 </head>
 <body>
+
+
+  <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
     <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
@@ -224,13 +207,20 @@
     </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="row" style="justify-content: space-between;">
+
+  <div id="cont_container" style="margin:auto">
+
+    
     <div>
-        <img class="Xsymbol_contact" src="assets/images/Index/Xsymbol.png">
+        <img class="Xsymbol_contact" src="assets/images/Index/Xsymbol_cropped.png">
     </div>
 
-    <div class="social_handles"> 
+    <div id="left" class="social_handles">
+      <div class="div_logo">
+        <a href="" class="back back_logo" style="color: white;"> <p class="back_logo1"> < </p></a>
+        <a href="" class="class_back">BACK</a>
+      </div>
+    <div > 
         <div class="top">
             <a href=""> <i class="fal fa-envelope"></i></a><a href="" class="mail">tedx@mitaoe.ac.in</a>
             <br>
@@ -255,15 +245,10 @@
         <a href="" class="class_back">BACK</a>
         </div> -->
         
-          <div class="div_logo">
-            <a href="" class="back back_logo" style="color: white;"> <p class="back_logo1"> < </p></a>
-            <a href="" class="class_back">BACK</a>
-          </div>
+    
+  </div>
 
-      </div>
     </div>
-
-   
     </body>
     </html>
 

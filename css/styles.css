@@ -32,36 +32,36 @@ ul {
 .book-now-box .book-now {
     color: red;
     text-decoration: none;
-    font-size: 0.6875em;
+    font-size: 11px;
 }
 
 .book-now-box {
-    border-bottom: 0.0625em solid rgb(255, 0, 0);
-    border-top: 0.0625em solid rgb(255, 0, 0);
+    border-bottom: 11px solid rgb(255, 0, 0);
+    border-top: 11px solid rgb(255, 0, 0);
     text-align: center;
     width: 85px;
-    margin-top: 1.5625em;
-    margin-left: 1.25em;
-    padding: 0.375em;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 6px;
 }
 
 .Xsymbol {
     position: absolute;
     top: 10%;
     left: 12%;
-    height: 25em;
-    width: 22.5em;
+    height: 400px;
+    width: 360px;
     z-index: -1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    padding-left: 3.125em;
+    padding-left: 50px;
     height: 50%;
-    font-size: 0.625em;
+    font-size: 10px;
     color: rgba(134, 92, 92, 0.5);
     transition: all 0.3s;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .nav-item {
@@ -74,35 +74,35 @@ ul {
     color: red;
 }
 
-@media (min-width:62em) {
+@media (min-width:992px) {
     .nav-animation {
         display: block;
     }    
 }
 
-@media (max-width:61.9375em) {
+@media (max-width:990px) {
     .nav-item {
         padding: 1.5rem;
     }
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    transform: translateY(-0.9375em);
+    transform: translateY(-15px);
 }
 
 .prarambh {
     background-image: url("../assets/images/Index/Prarambh_background.png");
-    height: 37.5em;
-    width: 41.25em;
+    height: 600px;
+    width: 660px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 37.5em 37.5em;
+    background-size: 600px  600px;
     position: relative;
 }
 
 .prarambh .container{
-    width: 10.625em;
-    height: 10.625em;
+    width: 170px;
+    height: 170px;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
@@ -121,72 +121,72 @@ ul {
         transform: translateX(0);
     }
     17%{
-        transform: translateX(-10.625em);
+        transform: translateX(-170px);
     }
     37%{
-        transform: translateX(-10.625em);
+        transform: translateX(-170px);
     }
     42%{
-        transform: translateX(-21.25px);
+        transform: translateX(-340px);
     }
     62%{
-        transform: translateX(-21.25em);
+        transform: translateX(-340px);
     }
     67%{
-        transform: translateX(-31.875em);
+        transform: translateX(-510px);
     }
     87%{
-        transform: translateX(-31-31.875em);
+        transform: translateX(-510px);
     }
     92%{
-        transform: translateX(-42.5em);
+        transform: translateX(-680px);
     }
     100%{
-        transform: translateX(-42.5em);
+        transform: translateX(-680px);
     }
 }
 
 .round-img {
-    width: -10.625em;
-    height: -10.625em;
+    width: 170px;
+    height: 170px;
 }
 
 .speaker-img-wrapper {
-    width: 7.5em;
-    height: 7.5em;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 0.09375em solid white;
+    border: 1.5px solid white;
     overflow: hidden;
 }
 
 .speaker-img {
-    width: 7.5em;
-    height: 7.5em;
+    width: 120px;
+    height: 120px;
 }
 
 .speaker-name {
-    font-size: 0.75em;
-    margin-top: 0.625em;
-    padding-bottom: 0.625em;
+    font-size: 12px;
+    margin-top: 12px;
+    padding-bottom: 10px;
 }
 
 .speaker-container {
     text-align: center;
-    width: 0.75em;
+    width: 12px;
     padding: 0 0;
 }
 
 .speaker-card-img {
-    border-radius: 0.625em;
-    box-shadow: 0 0 0.625em red;
-    width: 12.5em;
-    height: 12.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
 }
 
 .speaker-card-img img{
-    width: 12.5em;
-    height: 12.5em;
+    width: 200px;
+    height: 200px;
 }
 
 .speaker-card-title{
@@ -196,14 +196,14 @@ ul {
 }
 
 .speaker-card-name {
-    margin-left: 2.5em;
+    margin-left: 40px;
     color: red;
-    font-size: 2.5em;
+    font-size: 40px;
 }
 
 .speaker-card-info{
-    font-size: 0.75em;
-    margin-top: 2.5em;
+    font-size: 12px;
+    margin-top: 40px;
 }
 
 .speaker-card {
@@ -211,10 +211,10 @@ ul {
 }
 
 .speaker-card-active {
-    padding: 2.5em;
+    padding: 40px;
     display: block;
-    height: 34rem;
-    border: 0.0625em solid red;
+    height: 544px;
+    border: 1px solid red;
     border-radius: 2rem;
     background-color: black;
 }
@@ -238,8 +238,8 @@ ul {
 .event-button a {
     text-decoration: none;
     color: red;
-    border: 0.625em solid red;
-    padding: 0.3125em;
+    border: 1px solid red;
+    padding: 5px;
 }
 
 .previous-event-card {
@@ -250,7 +250,7 @@ ul {
 }
 
 .custom-btn {
-    padding: 0.625em 1.5625em;
+    padding: 1px 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     background: transparent;
@@ -260,9 +260,9 @@ ul {
     position: relative;
     display: inline-block;
     color: red;
-    margin-top: 1.875em;
-    margin-left: 1.875em;
-    font-size: 0.6875em;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 11px;
   }
 
 .custom-btn:hover {
@@ -271,9 +271,9 @@ ul {
 
   /**** BTN No. 5 ****/
 .btn-5 {
-    width: 8.125em;
-    height: 2.5em;
-    line-height: 2.625em;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
     padding: 0;
     border: none;
   }
@@ -294,11 +294,11 @@ ul {
   }
   .btn-5:before {
     height: 50%;
-    width: 0.125em;
+    width: 2px;
   }
   .btn-5:after {
     width: 20%;
-    height: 0.125em;
+    height: 2px;
   }
   .btn-5:hover:before {
     height: 100%;
@@ -316,12 +316,12 @@ ul {
     transition: all 0.3s ease;
   }
   .btn-5 span:before {
-    width: 0.125em;
+    width: 2px;
     height: 50%;
   }
   .btn-5 span:after {
     width: 20%;
-    height: 0.125em;
+    height: 2px;
   }
   .btn-5 span:hover:before {
     height: 100%;
@@ -332,19 +332,19 @@ ul {
 
 .prarambh-word {
     font-family: 'Samarkan Normal';
-    font-size: 4.375em;
+    font-size: 70px;
     position: absolute;
-    top: 17em;
-    left: 12.375em;
+    top: 272px;
+    left: 198px;
 }
 
 .round-img-hover {
     position: absolute;
-    padding: 1.5625em;
+    padding: 25px;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 5.625em;
-    height: 5.625em;
-    width: 5.625em;
+    border-radius: 90px;
+    height: 90px;
+    width: 90px;
     text-decoration: none;
     overflow: hidden;
     transition: all 0.5s;
@@ -352,27 +352,27 @@ ul {
 
 .round-img-hover:hover {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 15.625em;
+    width: 250px;
 }
 
 .round-img-box {
-    height: 2.5em;
-    width: 2.5em;
+    height: 40px;
+    width: 40px;
     transform: rotate(45deg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.5s;
     position: absolute;
-    top: 1.5625em;
-    left: 1.5625em;
+    top: 25px;
+    left: 25px;
 }
 
 .round-img-hover:hover .round-img-box {
-    height: 3.125em;
-    width: 3.125em;
-    top: 1.25em;
-    left: 1.25em;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
 }
 
 .round-img-sub-box {
@@ -382,49 +382,49 @@ ul {
 }
 
 .sub-box-1 {
-    height: 0.5em;
-    width: 0.5em;
-    border-top: 0.125em solid white;
-    border-left: 0.125em solid white;
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
 }
 
 .sub-box-2 {
-    height: 0.5em;
-    width: 0.5em;
-    border-top: 0.125em solid white;
-    border-right: 0.125em
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid white;
+    border-right: 2px
     solid white;
 }
 
 .sub-box-3 {
-    height: 0.5em;
-    width: 0.5em;
-    border-bottom: 0.125em solid white;
-    border-left: 0.125em solid white;
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
 }
 
 .sub-box-4 {
-    height: 0.5em;
-    width: 0.5em;
-    border-bottom: 0.125em solid white;
-    border-right: 0.125em solid white;
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .round-img-red-box {
     background-color: rgba(255, 0, 0, 0.5);
     position: absolute;
-    top: 0.625em;
-    left: 0.625em;
-    height: 1.25em;
-    width: 1.25em;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
     transition: all 0.5s;
 }
 
 .round-img-hover:hover .round-img-red-box {
-    top: 1.0625em;
-    left: 1.0625em;
-    height: 0.9375em;
-    width: 0.9375em;
+    top: 17px;
+    left: 17px;
+    height: 15px;
+    width: 15px;
     background-color: rgba(255, 0, 0, 0.9);
 }
 
@@ -434,7 +434,7 @@ ul {
 }
 
 .round-img-info h6 {
-    font-size: 0.625em;
+    font-size: 10px;
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
 }
@@ -444,7 +444,7 @@ ul {
 }
 
 .round-img-info p {
-    font-size: 0.9375em;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
 }
@@ -483,7 +483,7 @@ ul {
     height: 2rem;
 }
 .back-botton .back-symbol {
-    border: 0.0625em solid red;
+    border: 1px solid red;
     border-radius: 50%;
     color: white;
     font-size: 1rem;
@@ -495,7 +495,7 @@ ul {
 .back-botton .back-word {
     color: red;
     font-size: 0.6rem;
-    padding: 0.375em;
+    padding: 6px;
 }
 
 .partner-box {

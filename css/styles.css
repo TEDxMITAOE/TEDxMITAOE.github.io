@@ -506,6 +506,8 @@ ul {
     box-shadow: 5px 5px 16px -2px red;
     background-color: black;
     margin-right: 2rem;
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
 .partner {

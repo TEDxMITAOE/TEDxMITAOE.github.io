@@ -693,7 +693,7 @@ progress {
     flex-wrap: wrap;
     margin-top: calc(var(--bs-gutter-y) * -1);
     margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5)
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
 .row>* {
@@ -1392,7 +1392,7 @@ progress {
     }
     .col-lg-7 {
         flex: 0 0 auto;
-        width: 58.33333333%
+        width: 55.33333333%
     }
     .col-lg-8 {
         flex: 0 0 auto;

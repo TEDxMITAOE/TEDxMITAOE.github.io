@@ -13,12 +13,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
-
-      
+      body{
+        font-family: 'Montserrat', sans-serif;
+      }
         .social_handles{
           margin-top: 3%;
-            position: relative  ;
-            left: 50%;
+          position: relative;
+          left: 50%;
         }
         .Xsymbol_contact{
             /* position: absolute;
@@ -33,6 +34,7 @@
             left: -1%;
             height: 90%;
             width: 43.575%;
+            z-index: -1;
         }
         i{
             width: 40px;
@@ -41,10 +43,8 @@
             font-size: 35px;
             padding: 35px;
         }
-        
-
+      
         .back{
-            /* background-color: black; */
             color:red;
             width: 10px;
             height: 10px;
@@ -62,11 +62,6 @@
 
         }
         
-        
-        /* #size{
-          font-size: 30px;
-          margin-top: 120px;
-        } */
         .back , .back_logo:hover{
           border: 2px solid red;
           list-style: none;
@@ -103,9 +98,7 @@
         .top , a:hover{
             color: red;
             background-color: black;
-
-
-        }
+       }
         .top , .mail{
             position: relative;
         }
@@ -142,6 +135,138 @@
           flex: none;
           overflow: hidden;
         }
+        /* .contact_container{
+          background-color: red;
+        } */
+        .contact_head{
+          text-align: center; 
+        }
+        label{
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+        input{
+          border: 3px solid red;
+          color: white;
+          
+        }
+        textarea{
+          border: 3px solid red;
+          color: red;
+        }
+        
+        input:focus{
+          border: none;
+          background-color: transparent;
+          resize: none;
+          outline: none;
+          border: 3px solid red;  
+        }
+        textarea:focus{
+          border: none;
+          background-color: transparent;
+          resize: none;
+          outline: none;
+          border: 3px solid red;
+
+        }
+        .contact_container{
+          width: 700px;
+          height: 400px;
+          margin-left: 700px;
+          margin-top: 50px;
+         }
+         .Name{
+          width: fit-content;
+          text-align-last: start;
+         }
+         
+         .Email{
+          width: fit-content;
+          text-align-last: start;  
+         }
+         .contact_header{
+          text-align: -webkit-center;
+        }
+        .Message{
+          width: fit-content;
+          text-align-last: start;
+        }
+         .Name input{
+           /* background-color: black; */
+           background-color:rgba(0, 0, 0, 0);
+           border-radius: 0.7rem;
+         }
+         .Email input{
+           /* background-color: yellow; */
+           background-color: black;
+           border-radius: 0.7rem;
+         }
+         .Message textarea{
+          background-color: black;
+          border-radius: 0.7rem;
+          color:white;
+        }
+         .input{
+           margin: 10px;
+         }
+         
+         .Submit{
+           background-color: red;
+           margin-left: 10px;
+           border-radius: 10px;
+           width: 50%;
+           color: rgba(255, 255, 255, 0.5);
+         }
+         .div_social_logo{
+           /* background-color:red; */
+           /* width: 30px;
+           height: 30px; */
+           margin-left: 860px;
+           margin-top: 70px;
+           padding: 0px;
+           
+         }
+         btn:focus:{
+           outline:0 !important;
+           border-color: transparent;
+           /* webkit-box-shadow: none; */
+           box-shadow: none;
+          }
+
+         
+       .all_center{
+           text-align: center;
+         }
+         
+
+        /* @media (max-width:1234px) {
+          .div_social_logo{
+                  margin-left:500px;
+                  margin-top: 500px;
+                }
+        }
+        @media (max-width:411px) {
+          
+          .Xsymbol_contact{
+          position: absolute;
+            margin-top: .5%  ;
+            margin-left: 1.5%;
+            top: 9%;
+            left: -1%;
+            height: 30%;
+            width: 43.575%;
+          }
+          .contact_header{
+            height: 175%;
+            background-color: red;
+            left: 30px;
+          }
+
+          
+        } */
+
+         
 
     </style>
 
@@ -208,46 +333,66 @@
     </div>
   </nav>
 
-  <div id="cont_container" style="margin:auto">
-
-    
+  <div id="cont_container" > 
     <div>
         <img class="Xsymbol_contact" src="assets/images/Index/Xsymbol_cropped.png">
     </div>
 
-    <div id="left" class="social_handles">
+      
+      <div class="contact_container all_center">
+        <form action="">
+        <div class="contact_header">
+          <h2 class="contact_head" style="color: rgba(255, 255, 255, 0.5);">MAIL US</h2>  
+          <p class="contact_head" style="color: red"> Let us know your questions, suggestions and concerns by filling out the contact below </p>
+          <br>
+          <div class="Name input">
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" size="40">
+          </div>
+          <div class="Email input">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" size="40">
+          </div>
+          <div class="Message input">
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="43"></textarea>
+          </div>
+          <br>
+          <button class="Submit btn">Submit</button>
+        </div>
+      </div>
+    </form>
+
+      <!-- <div id="left" class="social_handles">
       <div class="div_logo">
         <a href="" class="back back_logo" style="color: white;"> <p class="back_logo1"> < </p></a>
         <a href="" class="class_back">BACK</a>
       </div>
-    <div > 
-        <div class="top">
+    <div>  -->
+        <!-- <div class="top">
             <a href=""> <i class="fal fa-envelope"></i></a><a href="" class="mail">tedx@mitaoe.ac.in</a>
             <br>
-            <!-- <hr> -->
             <a href="" class="maps map_icon"> <i class="far fa-map" id="mapp_icon"></i></a> <a href="" class="mail maps"> <span> <b>MIT</b></span> Academy of Engineering, Alandi</a>
             
-        </div >
+        </div> -->
       </div>
-        <br><br><br>
+        <br><br>
         <div class="div_social_logo">
+        <!-- <a href="" class="maps map_icon"> <i class="far fa-map" id="mapp_icon"></i></a> <a href="" class="mail maps"> <span> <b>MIT</b></span> Academy of Engineering, Alandi</a>
+        <br> -->
         <a href="" class="social_logo"> <i class="fab fa-twitter"></i></a>
         <a href="" class="social_logo"> <i class="fab fa-facebook-f"></i></a>
         <a href="" class="social_logo"> <i class="fab fa-instagram"></i></a>
         <a href="" class="social_logo"> <i class="fab fa-youtube"></i></a>
       </div>
+      </div>
     
-
-    <!-- <div class="angle_div">  -->
-        <!-- <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo"> -->
-        <!-- <div class="back"><a href="" class="back back_logo" style="color: white;"> < </a></div> -->
-        <!-- <div class="circle"><a href="" class="back back_logo " style="color: white;" id="size"><</a></div>
-        <a href="" class="class_back">BACK</a>
-        </div> -->
-        
-    
+         
   </div>
 
+    </div>
+    <div class="col-lg-12" style="text-align: center; margin-top: 50px; font-size: 14px; margin-left: 40px;">
+      &copy; Copyrights 2021 All Rights Reserved.
     </div>
     </body>
     </html>

@@ -36,8 +36,8 @@ ul {
 }
 
 .book-now-box {
-    border-bottom: 11px solid rgb(255, 0, 0);
-    border-top: 11px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-top: 1px solid rgb(255, 0, 0);
     text-align: center;
     width: 85px;
     margin-top: 25px;
@@ -47,10 +47,10 @@ ul {
 
 .Xsymbol {
     position: absolute;
-    top: 10%;
-    left: 12%;
-    height: 400px;
-    width: 360px;
+    top: 20%;
+    left: 22%;
+    height: 500px;
+    width: 460px;
     z-index: -1;
 }
 
@@ -58,8 +58,7 @@ ul {
     padding-left: 50px;
     height: 50%;
     font-size: 10px;
-    /* color: rgba(134, 92, 92, 0.5); */
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -83,7 +82,7 @@ ul {
     }    
 }
 
-@media (max-width:990px) {
+@media (max-width:991px) {
     .nav-item {
         padding: 1.5rem;
     }
@@ -99,7 +98,7 @@ ul {
     width: 660px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 600px  600px;
+    background-size: 600px 600px;
     position: relative;
 }
 
@@ -169,13 +168,13 @@ ul {
 
 .speaker-name {
     font-size: 12px;
-    margin-top: 12px;
+    margin-top: 10px;
     padding-bottom: 10px;
 }
 
 .speaker-container {
     text-align: center;
-    width: 12px;
+    width: 120px;
     padding: 0 0;
 }
 
@@ -201,7 +200,7 @@ ul {
 .speaker-card-name {
     margin-left: 40px;
     color: red;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .speaker-card-info{
@@ -216,7 +215,7 @@ ul {
 .speaker-card-active {
     padding: 40px;
     display: block;
-    height: 544px;
+    height: 34rem;
     border: 1px solid red;
     border-radius: 2rem;
     background-color: black;
@@ -253,7 +252,7 @@ ul {
 }
 
 .custom-btn {
-    padding: 1px 25px;
+    padding: 10px 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     background: transparent;
@@ -395,8 +394,7 @@ ul {
     height: 8px;
     width: 8px;
     border-top: 2px solid white;
-    border-right: 2px
-    solid white;
+    border-right: 2px solid white;
 }
 
 .sub-box-3 {
@@ -505,7 +503,7 @@ ul {
     border: 1px solid red;
     border-radius: 2rem;
     padding: 1rem;
-    box-shadow: 5px 5px 16px -2px red;
+    box-shadow: 5px 6px 17px -2px red;
     background-color: black;
     margin-right: 2rem;
      margin-right: calc(var(--bs-gutter-x) * -.5);
@@ -548,8 +546,7 @@ ul {
     display: block;
     height: 27rem;
     margin-top: 4rem;
-    border: 3px solid red;
-    box-shadow: 5px 5px 16px -2px red;
+    border: 1px solid red;
     border-radius: 2rem;
     background-color: black;
 }
@@ -570,4 +567,107 @@ ul {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
+}
+
+.team-box {
+    border: 1px solid red;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 7px 7px 40px -18px red;
+    background-color: black;
+    position: fixed;
+    top: 25%;
+    left: 5%;
+}
+
+@media (max-width: 1040px) {
+    .team-box {
+        display: none;
+    }
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.team-container {
+    height: 1.4rem;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    margin: 0.5rem 0rem;
+}
+
+.team-botton {
+    border: 0.2rem solid red;
+    border-radius: 1.7rem;
+    box-shadow: 7px 7px 40px -14px red;
+    color: red;
+    font-size: 1.3rem;
+    height: 3.4rem;
+    width: 14rem;
+    padding: 0.4rem 0rem;
+}
+
+.team-img {
+    width: auto;
+    text-align: center;
+}
+
+.team-img img {
+    border: 0.1rem solid red;
+    border-radius: 50%;
+    box-shadow: 7px 7px 40px -18px red;
+    height: 8rem;
+    width: 8rem;
+}
+
+.team-img h1 {
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    width: 13rem;
+    text-align: center;
+}
+
+.team-img p {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    width: 13rem;
+    text-align: center;
+    color: red;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.team-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.team-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
 }

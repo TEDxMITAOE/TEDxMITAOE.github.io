@@ -188,7 +188,7 @@ ul {
 
 .speaker-container {
     text-align: center;
-    width: 12px;
+    width: fit-content;
     padding: 0 0;
 }
 

@@ -29,6 +29,12 @@ ul {
     padding-top: 10rem;
 }
 
+@media (max-width:991px) {
+    .info {
+        padding-bottom: 25vw;
+    }
+}
+
 .book-now-box .book-now {
     color: red;
     text-decoration: none;
@@ -52,6 +58,21 @@ ul {
     height: 500px;
     width: 460px;
     z-index: -1;
+}
+
+@media (max-width:991px) {
+    .Xsymbol {
+        right: 10%;
+    }
+}
+
+@media (max-width:575px) {
+    .Xsymbol {
+            top: 21vw;
+            right: 0vw;
+            height: 84.5vw;
+            width: 75vw;
+    }
 }
 
 .navbar-dark .navbar-nav .nav-link {

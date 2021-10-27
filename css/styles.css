@@ -75,8 +75,8 @@ ul {
     color: red;
 }
 
-@media (min-width:992px) 
-(overflow-x:hidden){
+@media (min-width:992px)
+{
     .nav-animation {
         display: block;
 

@@ -24,40 +24,111 @@
           width: 100%;
           height: 100%;
         }
-
+       
         .Xsymbol_about{
           position: absolute;
           margin-top: .5%  ;
           margin-left: 1.5%;
           top: 9%;
           left: -1%;
-          height: 90%;
-          width: 43.575%;
+          height: 80%;
+          width: 40%;
         }
+        @media (max-width:768px)
+          {
+            .Xsymbol_about{
+                height: 100%;
+                width: 120%;
+                margin-top: 11%;
+              }
+          }
+
+
+
+          @media (max-width:441px)
+          {
+            .Xsymbol_about{
+                height: 70%;
+                width: 90%;
+                margin-top: 11%;
+              }
+          }
+
          .row_event{
             position: absolute;
             bottom: 490px;
             right: 80px;
-            top: 250px;
+            top: 100px;
             width: 50%;
             /* border: 3px solid #8AC007; */
         }
+        
         h2{
             color:#fff;
             font-size: 25px;
         }
+        @media (max-width:768px)
+        {
+            h2{
+              margin-left:-150px;
+              font-size:110px;
+              margin-top:10%;
+              z-index: -5;
+            }
+        }   
+
+
+        @media (max-width:441px)
+        {
+            h2{
+              margin-left:5px;
+              font-size:40px;
+            }
+        }   
+       
         span{
             color: red;
-            font-size: 50px;
+            font-size: 40px;
         }
+        @media (max-width:768px)
+        {
+          span{
+               margin-top: 9%;
+               font-size: 60px;
+                margin-left: 60px;
+              } 
+        }   
+        
         p{
             margin-top: 25px;
             color:#fff;
-            font-size: 17px;
+            font-size: 18px;
             text-align:justify;
             text-decoration: none;
             font-size: 20px;
             /* word-spacing: 2px; */
+        }
+        @media(max-width:768px)
+        {
+          p{
+            margin-top: 25px;
+            font-size: 25px;
+            text-align:justify;
+            margin-left:-100px;
+            font-size: 25px;
+            padding-left: 2px;
+          }
+        }
+          
+        @media(max-width:441px)
+        {
+          p{
+            margin-top: 15px;
+            font-size: 12px;
+            text-align:left;
+            margin-left:-100px;
+            font-size: 13px;
+          }
         }
         .know-more{
             list-style: none;
@@ -76,59 +147,38 @@
             border-radius: 20px;
             box-shadow: 0 0 1px red; 
         }
+        @media(max-width:768px)
+        {
+        .know-more{
+            font-size: 20px;
+            margin-top: 75px;
+            margin-left: 30px;
+            border-radius: 300px;
+           }
+        }
+        @media(max-width:441px)
+        {
+        .know-more{
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 50px;
+            border-radius: 300px;
+           }
+        }
         .know-more, a{
             list-style: none;
             color: red;
             text-decoration: none;
         
         }
-        .back{
-            /* background-color: black; */
-            color:red;
-            width: 10px;
-            height: 10px;
-            /* position: absolute;
-            left: 755px;
-            bottom: 650px; */
-            border-radius: 70px;
-            border: 3px solid red;
-        }
-        .back , .back_logo{
-          list-style: none;
-          text-align: center ;  
-          font-size: 8px;
-          color: white;
-
-        }
+        
         
         
         /* #size{
           font-size: 30px;
           margin-top: 120px;
         } */
-        .back , .back_logo:hover{
-          border: 2px solid red;
-          list-style: none;
-          text-decoration: none;
-          color: white;
-          background-color: black;
-          
-        }
         
-        .class_back{
-            font-size: 13px;
-            list-style: none;
-            text-decoration: none;
-            color: red;
-            padding:0 !important;
-            padding-left: 3px !important;
-        }
-        a , .class_back:hover{
-          color: red;
-          background-color: black ;
-          border: black;
-  
-      }
       .col-1{
           display: inline-block;
           width: 100%;
@@ -207,11 +257,7 @@
 
         <div class="row_event">
             <div class="col-1">
-              <div> 
-                <!-- <img src="assets/images/logo/going_back_icon.png" class="back" alt="going_back logo"> -->
-                <a href="" class="back back_logo"><</a>
-                <a href="" class="class_back">BACK</a>
-              </div>
+              
                 <h2>About<span> EVENT</span></h2>
                 <a href=""> <p><b>“ अंतः अस्ति प्रारंभः “</b><br>
                   Hailing from the land of rich ancient Sanskrit wisdom, we fathomed that every edge is the beginning of a new horizon that is explorable. The pandemic made the past year lamentable to mankind in numerous ways. It was the end of many things, though it paved the way for limitless things we previously didn’t traverse. Ultimately it’s time to walk down that aspiring route.<br>

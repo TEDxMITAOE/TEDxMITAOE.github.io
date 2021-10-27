@@ -160,7 +160,7 @@
         {
         .know-more{
             font-size: 20px;
-            margin-top: 100px;
+            margin-top: 130px;
             margin-left: 50px;
             border-radius: 300px;
            }
@@ -183,16 +183,26 @@
           display: inline-block;
           width: 100%;
         }
-      
-        @media (max-width:411px){
-          .navbar-toggler-icon {
-          width: 20px;
-          height:20px;
-          padding: 0px;
-
-  
+        .navbar-toggler-icon {
+          display: inline-block;
+          width: 1.5em;
+          height: 1.5em;
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
         }
-      }
+      
+        @media (max-width:411px)
+        {
+          .navbar-toggler-icon
+           {
+          width: 0.75em;
+          height: 0.60em;
+          margin-right:10px;
+          margin-top:5% ;
+           }
+        }
         
     </style>
 

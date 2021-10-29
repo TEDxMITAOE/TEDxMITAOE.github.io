@@ -15,9 +15,7 @@
     <style>
       body{
         font-family: 'Montserrat', sans-serif;
-        overflow: hidden;
-        overflow-y: hidden; /* Hide vertical scrollbar */
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+
       }
         .social_handles{
           margin-top: 3%;
@@ -134,12 +132,12 @@
           margin-left: 20px;
         }
         
-        body
-        /* .contact_container{
-          background-color: red;
-        } */
+        .body
+        {position:fixed;
+        }
         .contact_head{
           text-align: center; 
+        
         }
         label{
           font-size: 13px;
@@ -278,13 +276,12 @@
 
           
         } */
-        @media (max-width:768px){
-          .body{
-             overflow: hidden;
-             overflow-y: hidden; /* Hide vertical scrollbar */
-             overflow-x: hidden; /* Hide horizontal scrollbar */
-          }
-        }
+       @media(max-width:768px){
+         .body{
+           position:fixed;
+           
+         }
+       }
         @media (max-width:768px) {
           .Xsymbol_contact{
             display: none;
@@ -298,9 +295,10 @@
             Font-size:10px;
             /* margin-right: 180px; */
             margin-left: -260%;
-            overflow: hidden;
-            overflow-y: hidden; /* Hide vertical scrollbar */
-            overflow-x: hidden; /* Hide horizontal scrollbar */
+            /*
+             overflow: hidden;
+             overflow-y: hidden; 
+             overflow-x: hidden; Hide horizontal scrollbar */
           } 
         }
             @media(max-width:768px){
@@ -385,7 +383,7 @@
         }
         @media(max-width:768px){
           .navbar-toggler-icon {
-            margin-left: -300px;
+            margin-left: -50px;
         }
       }
         @media (max-width:768px) {

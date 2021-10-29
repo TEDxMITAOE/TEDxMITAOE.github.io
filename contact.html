@@ -15,6 +15,9 @@
     <style>
       body{
         font-family: 'Montserrat', sans-serif;
+        overflow: hidden;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
       }
         .social_handles{
           margin-top: 3%;
@@ -131,10 +134,7 @@
           margin-left: 20px;
         }
         
-        body{
-          flex: none;
-          overflow: hidden;
-        }
+        body
         /* .contact_container{
           background-color: red;
         } */
@@ -242,7 +242,12 @@
            /* display: ; */
            color: white;
          }
-        
+        .col-lg-12 copy{
+          text-align: center; 
+          margin-top: 210px;
+           font-size: 14px;
+            margin-left: 40px;
+        }
          
 
          
@@ -273,30 +278,80 @@
 
           
         } */
-        @media (max-width:768px) {
-          .Xsymbol_contact{
-          /* position: absolute; */
-            /* margin-top: .5%  ; */
-            margin-left: 1.5%;
-            top: 9%;
-            left: -1%;
-            height: 100%;
-            width: 90%;
-
+        @media (max-width:768px){
+          .body{
+             overflow: hidden;
+             overflow-y: hidden; /* Hide vertical scrollbar */
+             overflow-x: hidden; /* Hide horizontal scrollbar */
           }
         }
+        @media (max-width:768px) {
+          .Xsymbol_contact{
+            display: none;
+          }
+        }
+        
         @media (max-width:768px) {
           .contact_header{
             /* background-color: red; */
-            margin-top: 150px;
+            margin-top: 80px;
+            Font-size:10px;
             /* margin-right: 180px; */
-            margin-left: -100px;
+            margin-left: -260%;
+            overflow: hidden;
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+          } 
+        }
+            @media(max-width:768px){
+          .Submit{
+           background-color: red;
+           margin-left: 10px;
+           border-radius: 10px;
+           width: auto;
           }
+        }
+          @media (max-width:768px){
+            .p{
+              Font-size:7px;
+              text-align:justify;
+              margin-top: 220px;
+            }
 
+        }
+        @media(max-width:768px)
+        {
+          i{
+            width: 1px;
+            margin-left:20px;
+            height: 9px;
+            font-size: 19px;
+            padding: 20px;
+        }
+      }
+        @media(max-width:768px){
+        element.style {
+              text-align: center;
+              margin-top: 50px;
+              font-size: 14px;
+              margin-left: 20px;
+        }
+      }
+
+        
+        @media(max-width:768px){
+          .social-media-side-dock{
+            margin-right:82%;
+            margin-top: 320px;
+            width:20%;
+            display:flex;
+            Flex-direction:row;
+            
+          } 
         }
         @media (max-width:768px) {
           .contact_header label{
-            font-size: 18px;
+            font-size: 10px;
 
           }
         }
@@ -313,7 +368,8 @@
         } */
         @media (max-width:768px) {
           .social-media-side-dock{
-            margin-top: 120px;
+            margin-top: 320px;
+            margin-left:-600%;
             
           }
 
@@ -321,28 +377,29 @@
         }
         @media (max-width:768px) {
           .copy{
-            margin-left: 400px  ;
+            margin-left:10px  ;
+            Margin-top:70px;
+            
           }
           
         }
-        @media (max-width:411px) {
-          .Xsymbol_contact{
-          /* position: absolute; */
-            /* margin-top: .5%  ; */
-            /* margin-left: 1.5%; */
-            /* top: 9%; */
-            /* left: -1%; */
-            height: 100%;
-            width: 90%;
-
-          }
-        
+        @media(max-width:768px){
+          .navbar-toggler-icon {
+            margin-left: -300px;
         }
+      }
         @media (max-width:768px) {
           
           .contact_header{
-            font-size: 18px;
+            font-size: 10px;
 
+
+          }
+        }
+        @media(max-width:768px){
+          .col-lg-12 copy{
+                    margin-top:100px;
+                    margin-left:10px;
 
           }
         }
@@ -374,7 +431,7 @@
 <body>
 
 
-  <!-- nav -->
+   <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
     <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
@@ -433,7 +490,7 @@
         <form action="">
         <div class="contact_header">
           <h2 class="contact_head" style="color: rgba(255, 255, 255, 0.5);">MAIL US</h2>  
-          <p class="contact_head" style="color: red"> Let us know your questions, suggestions and concerns by filling out the contact below </p>
+          <p class="contact_head" style="color: red"> Let us know your questions, suggestions and concerns <br> by filling out the contact below </p>
           <br>
           <div class="Name input">
             <label for="name">Name</label> <br>
@@ -482,7 +539,7 @@
 
     </div>
     
-    <div class="col-lg-12 copy" style="text-align: center; margin-top: 210px; font-size: 14px; margin-left: 40px;">
+    <div class="col-lg-12 copy" style="text-align: center; margin-top: 100px; font-size: 15px;"">
       &copy; Copyrights 2021 All Rights Reserved.
     </div>
     <div class="social-media-side-dock" style="top: 210px;">
@@ -493,5 +550,3 @@
     </div>
     </body>
     </html>
-
-    

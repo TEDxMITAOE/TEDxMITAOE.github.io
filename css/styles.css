@@ -95,9 +95,11 @@ ul {
     color: red;
 }
 
-@media (min-width:992px) {
+@media (min-width:992px)
+{
     .nav-animation {
         display: block;
+
     }    
 }
 
@@ -641,6 +643,8 @@ ul {
     box-shadow: 5px 6px 17px -2px red;
     background-color: black;
     margin-right: 2rem;
+     margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
 .partner {

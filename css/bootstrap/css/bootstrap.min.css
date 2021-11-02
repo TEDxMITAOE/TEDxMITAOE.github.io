@@ -692,8 +692,9 @@ progress {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5)
+    
+  ;
+    margin-left: calc(var(--bs-gutter-x) * 1);
 }
 
 .row>* {
@@ -880,7 +881,9 @@ progress {
     }
 }
 
-@media (min-width:1400px) {
+@media { min-width:1400px
+    overflow-y: hidden;
+}{
     .col-xxl {
         flex: 1 0 0%
     }
@@ -1392,7 +1395,7 @@ progress {
     }
     .col-lg-7 {
         flex: 0 0 auto;
-        width: 58.33333333%
+        width: 55.33333333%
     }
     .col-lg-8 {
         flex: 0 0 auto;

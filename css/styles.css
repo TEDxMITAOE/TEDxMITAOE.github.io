@@ -374,7 +374,9 @@ ul {
     position: absolute;
     top: 46%;
     left: 30%;
+    cursor: pointer;
 }
+
 
 @media (max-width:767px) {
     .prarambh-word {

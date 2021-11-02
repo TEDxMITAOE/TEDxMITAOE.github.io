@@ -28,3 +28,8 @@ function toggleNavBar(){
         NavButton.classList.remove("collapsed");
     }
 }
+
+
+    document.getElementById("prarambh-word").onclick = function () {
+        location.href = "about.html";
+    };

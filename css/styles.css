@@ -834,7 +834,8 @@ ul {
     justify-content: space-between;
     margin: 0px;
 }
-@media (max-width: 742px) {
+
+@media (max-width: 767px) {
     .for_res{
         display: none;
     }
@@ -843,12 +844,12 @@ ul {
     }
     }
 
-    @media (min-width: 743px) {
-        .for_res2{
-            display: none;
-        }
-        .for_res{
-            display: block;
-        }
-        }
+@media (min-width: 768px) {
+    .for_res2{
+        display: none;
+    }
+    .for_res{
+        display: block;
+    }
+    }
 

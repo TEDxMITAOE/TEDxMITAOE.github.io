@@ -695,6 +695,7 @@ ul {
     margin-top: 4rem;
     border: 1px solid red;
     border-radius: 2rem;
+    box-shadow: 5px 6px 17px -2px red;
     background-color: black;
 }
 

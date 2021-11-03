@@ -834,3 +834,21 @@ ul {
     justify-content: space-between;
     margin: 0px;
 }
+@media (max-width: 742px) {
+    .for_res{
+        display: none;
+    }
+    .for_res2{
+        display: block;
+    }
+    }
+
+    @media (min-width: 743px) {
+        .for_res2{
+            display: none;
+        }
+        .for_res{
+            display: block;
+        }
+        }
+

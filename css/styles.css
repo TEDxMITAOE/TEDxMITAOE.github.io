@@ -294,6 +294,7 @@ ul {
     background: transparent;
     outline: none !important;
     cursor: pointer;
+    border-radius: 10rem;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
@@ -305,6 +306,7 @@ ul {
 
 .custom-btn:hover {
     color: white;
+    
 }
 
   /**** BTN No. 5 ****/
@@ -314,6 +316,7 @@ ul {
     line-height: 42px;
     padding: 0;
     border: none;
+    border-radius: 10rem;
   }
   .btn-5 span {
     position: relative;
@@ -326,6 +329,7 @@ ul {
     position: absolute;
     content: "";
     right: 0;
+    border-radius: 10rem;
     bottom: 0;
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
@@ -352,6 +356,7 @@ ul {
     top: 0;
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
+    border-radius: 10rem;
   }
   .btn-5 span:before {
     width: 2px;

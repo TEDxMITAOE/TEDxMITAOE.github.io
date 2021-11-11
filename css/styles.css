@@ -774,6 +774,24 @@ ul {
     width: 8rem;
 }
 
+.team-left .team-img {
+    margin-left: 15.5%;
+}
+
+.team-right .team-img {
+    margin-right: 15.5%;
+}
+
+@media (max-width: 1399px) {
+    .team-left .team-img {
+        margin-left: 10%;
+    }
+    
+    .team-right .team-img {
+        margin-right: 10%;
+    }
+}
+
 .team-img h1 {
     font-size: 2rem;
     margin-top: 0.8rem;

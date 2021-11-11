@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="description" content="An independently organised event devoted to uncover Ideas Worth Spreading & spark engrossing conversations, celebrating ideas, innovations & humanity.">
     <!-- Site Icons -->
-    <link rel="apple-touch-icon" href="assets/images/logo/TEDxMITAOE_Logo_Black.png" type="image/png">
-    <link rel="icon" href="assets/images/logo/TEDxMITAOE_Logo_Black.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/favicon/faviconX.png" type="image/png">
+    <link rel="icon" href="assets/favicon/faviconX.png" type="image/png">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -51,7 +51,7 @@
                 width: 120%;
                 margin-top: 11%;
               }
-              h2{
+              .about{
                 margin-left: -90px;
               }
           }
@@ -81,13 +81,13 @@
             /* border: 3px solid #8AC007; */
         }
         
-        h2{
+        .about{
             color:#fff;
             font-size: 40px;
         }
         @media (max-width:768px)
         {
-            h2{
+          .about{
               
               font-size:30px !important;
               margin-top:10%;
@@ -98,13 +98,13 @@
 
         @media (max-width:441px)
         {
-            h2{
+            .about{
               margin-left:-25px;
               font-size:30px !important;
               /* margin-right: -200px !important; */
               margin-left: -95px;
             }
-            span{
+            .event{
             color: red;
             font-size: 30px;
         }
@@ -116,26 +116,30 @@
         
          
        
-        span{
+        .event{
             color: red;
             font-size: 70px;
+            padding-left: 10px;
         }
         @media (max-width:768px)
         {
-          span{
+          .event{
+               padding-left: 8px;
                margin-top: 9%;
                font-size: 50px;
               } 
         }   
         
         p{
-            margin-top: 25px;
-            color:#fff;
-            text-align:justify;
-            text-decoration: none;
-            font-size: 15px;
+          margin-top: 10px;
+          color:rgba(255, 255, 255, 0.664);
+          text-align:justify;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 100 !important;
             /* word-spacing: 2px; */
         }
+        
         @media(max-width:768px)
         {
           p{
@@ -159,9 +163,9 @@
         .know-more{
             list-style: none;
             color: red;
-            font-size: 15px;
-            margin-top: 90px;
-            margin-left: 550px;
+            font-size: 12px;
+            margin-top: 30px;
+            margin-left: 530px;
             background:black;
             border-radius: 300px;  
             text-decoration: none; 
@@ -169,7 +173,7 @@
             border: 2px solid red;
             padding: 6px 20px; 
             background: black;
-            width: 170px;
+            width: 150px;
             border-radius: 20px;
             box-shadow: 0 0 1px red; 
         }
@@ -306,21 +310,25 @@
         <div class="row_event">
             <div class="col-1">
               
-                <h2>About<span> EVENT</span></h2>
-                <a href=""> <p><b>“ अंतः अस्ति प्रारंभः “</b><br>
-                  Hailing from the land of rich ancient Sanskrit wisdom, we fathomed that every edge is the beginning of a new horizon that is explorable. The pandemic made the past year lamentable to mankind in numerous ways. It was the end of many things, though it paved the way for limitless things we previously didn’t traverse. Ultimately it’s time to walk down that aspiring route.<br>
+                <section style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            "><span class="about">About</span><span class="event"> EVENT</span></section>
+                <section><b style="color: #fff; font-weight: 1000; font-size: 17px;">“ अंतः अस्ति प्रारंभः ”</b></section>
+                <p>Hailing from the land of rich ancient Sanskrit wisdom, we fathomed that every edge is the beginning of a new horizon that is explorable. The pandemic made the past year lamentable to mankind in numerous ways. It was the end of many things, though it paved the way for limitless things we previously didn’t traverse. Ultimately it’s time to walk down that aspiring route.<br>
                   
                   TEDxMITAOE is enthralled to reveal the theme of our sophomore edition -"PRARAMBH"<br>
                   
                   Impelled by the prevailing circumstances and longing for the resurrection of new opportunities, innovations, and ideologies, we have exclusively hand-picked PRARAMBH as our theme for this year.
                   
-                </p></a>
+                </p>
                  <button class="know-more btn "><a href="">KNOW MORE</a></button>
             </div>
         </div>
 
         <div>
-            <img class="Xsymbol_about" style="z-index: -5;" src="assets/images/Index/Xsymbol_cropped.png">
+            <img class="Xsymbol_about" style="z-index: -5;" src="assets/images/Index/Xsymbol.png">
         </div>
         <div class="bottom-shadow"></div>
         

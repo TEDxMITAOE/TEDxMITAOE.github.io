@@ -32,3 +32,16 @@ function toggleNavBar(){
 function autoChangeSpeaker() {
     setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
 }
+function redirect(key)
+{
+  switch (key) {
+    case 1: window.open("https://go.tedxmitaoe.com/twitter","_blank").focus();
+      break;
+    case 2: window.open("https://go.tedxmitaoe.com/fb","_blank").focus();
+      break;
+    case 3: window.open("https://go.tedxmitaoe.com/linkedin","_blank").focus();
+      break;
+    case 4: window.open("https://go.tedxmitaoe.com/insta","_blank").focus();
+      break;
+  }
+}

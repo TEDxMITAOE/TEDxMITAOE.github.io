@@ -600,8 +600,8 @@ ul {
 .social-media-side-dock1 {
     font-size: 1.3rem;
     position: fixed;
-    top: 40%;
-    right: 0.5rem;
+    top: 36%    ;
+    right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -610,8 +610,8 @@ ul {
 .social-media-side-dock2{
     font-size: 1.3rem;
     position: fixed;
-    top: 45%;
-    right: 0.5rem;
+    top: 43%;
+    right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -621,7 +621,7 @@ ul {
     font-size: 1.3rem;
     position: fixed;
     top: 50%;
-    right: 0.5rem;
+    right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -630,8 +630,8 @@ ul {
 .social-media-side-dock4 {
     font-size: 1.3rem;
     position: fixed;
-    top: 55%;
-    right: 0.5rem;
+    top: 57%;
+    right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;

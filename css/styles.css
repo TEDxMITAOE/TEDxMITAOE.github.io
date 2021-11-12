@@ -1,6 +1,6 @@
 /* index.html CSS */
-@import "bootstrap/css/bootstrap.min.css";
 
+@import "bootstrap/css/bootstrap.min.css";
 @font-face {
     font-family: 'Samarkan Normal';
     font-style: normal;
@@ -9,19 +9,19 @@
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	color: white;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .info {
@@ -68,10 +68,10 @@ ul {
 
 @media (max-width:575px) {
     .Xsymbol {
-            top: 21vw;
-            right: 0vw;
-            height: 84.5vw;
-            width: 75vw;
+        top: 21vw;
+        right: 0vw;
+        height: 84.5vw;
+        width: 75vw;
     }
 }
 
@@ -95,12 +95,10 @@ ul {
     color: red;
 }
 
-@media (min-width:992px)
-{
+@media (min-width:992px) {
     .nav-animation {
         display: block;
-
-    }    
+    }
 }
 
 @media (max-width:991px) {
@@ -137,7 +135,7 @@ ul {
     }
 }
 
-.prarambh .container{
+.prarambh .container {
     width: 25.7%;
     height: 28%;
     position: absolute;
@@ -145,41 +143,42 @@ ul {
     border-radius: 50%;
     padding: 0 0;
 }
-.prarambh .container .wrapper{
+
+.prarambh .container .wrapper {
     width: 100%;
     display: flex;
     animation: slideshow 12s infinite;
 }
 
-@keyframes slideshow{
-    0%{
+@keyframes slideshow {
+    0% {
         transform: translateX(0);
     }
-    12%{
+    12% {
         transform: translateX(0);
     }
-    17%{
+    17% {
         transform: translateX(-100%);
     }
-    37%{
+    37% {
         transform: translateX(-100%);
     }
-    42%{
+    42% {
         transform: translateX(-200%);
     }
-    62%{
+    62% {
         transform: translateX(-200%);
     }
-    67%{
+    67% {
         transform: translateX(-300%);
     }
-    87%{
+    87% {
         transform: translateX(-300%);
     }
-    92%{
+    92% {
         transform: translateX(-400%);
     }
-    100%{
+    100% {
         transform: translateX(-400%);
     }
 }
@@ -222,12 +221,12 @@ ul {
     overflow: hidden;
 }
 
-.speaker-card-img img{
+.speaker-card-img img {
     width: 100%;
     height: 100%;
 }
 
-.speaker-card-title{
+.speaker-card-title {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -239,7 +238,7 @@ ul {
     font-size: 50px;
 }
 
-.speaker-card-info{
+.speaker-card-info {
     font-size: 12px;
     margin-top: 40px;
 }
@@ -302,14 +301,14 @@ ul {
     margin-top: 30px;
     margin-left: 30px;
     font-size: 11px;
-  }
+}
 
 .custom-btn:hover {
     color: white;
-    
 }
 
-  /**** BTN No. 5 ****/
+/**** BTN No. 5 ****/
+
 .btn-5 {
     width: 130px;
     height: 40px;
@@ -317,15 +316,16 @@ ul {
     padding: 0;
     border: none;
     border-radius: 10rem;
-  }
-  .btn-5 span {
+}
+
+.btn-5 span {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
-  }
-  .btn-5:before,
-  .btn-5:after {
+}
+
+.btn-5:before, .btn-5:after {
     position: absolute;
     content: "";
     right: 0;
@@ -333,23 +333,27 @@ ul {
     bottom: 0;
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
-  }
-  .btn-5:before {
+}
+
+.btn-5:before {
     height: 50%;
     width: 2px;
-  }
-  .btn-5:after {
+}
+
+.btn-5:after {
     width: 20%;
     height: 2px;
-  }
-  .btn-5:hover:before {
+}
+
+.btn-5:hover:before {
     height: 100%;
-  }
-  .btn-5:hover:after {
+}
+
+.btn-5:hover:after {
     width: 100%;
-  }
-  .btn-5 span:before,
-  .btn-5 span:after {
+}
+
+.btn-5 span:before, .btn-5 span:after {
     position: absolute;
     content: "";
     left: 0;
@@ -357,21 +361,25 @@ ul {
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
     border-radius: 10rem;
-  }
-  .btn-5 span:before {
+}
+
+.btn-5 span:before {
     width: 2px;
     height: 50%;
-  }
-  .btn-5 span:after {
+}
+
+.btn-5 span:after {
     width: 20%;
     height: 2px;
-  }
-  .btn-5 span:hover:before {
+}
+
+.btn-5 span:hover:before {
     height: 100%;
-  }
-  .btn-5 span:hover:after {
+}
+
+.btn-5 span:hover:after {
     width: 100%;
-  }
+}
 
 .prarambh-word {
     font-family: 'Samarkan Normal';
@@ -380,7 +388,6 @@ ul {
     top: 42%;
     left: 30%;
 }
-
 
 @media (max-width:767px) {
     .prarambh-word {
@@ -597,23 +604,48 @@ ul {
     }
 }
 
-.social-media-side-dock {
+.social-media-side-dock1 {
     font-size: 1.3rem;
     position: fixed;
-    top: 39vh;
-    right: 0.5rem;
+    top: 36%;
+    right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 1.9;
 }
 
-.social-media-side-dock a {
-    width: fit-content;
+.social-media-side-dock2 {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 43%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
 }
 
-.social-media-side-dock a i {
-    color: red;
+.social-media-side-dock3 {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.social-media-side-dock4 {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 57%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
 }
 
 .back-botton {
@@ -672,7 +704,7 @@ ul {
     box-shadow: 5px 6px 17px -2px red;
     background-color: black;
     margin-right: 2rem;
-     margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
@@ -689,7 +721,7 @@ ul {
     width: 5rem;
 }
 
-.partner:hover .animation{
+.partner:hover .animation {
     transform: translateY(-1.4rem);
 }
 
@@ -726,11 +758,11 @@ ul {
     overflow: hidden;
 }
 
-.partner-card-img img{
+.partner-card-img img {
     width: 100%;
 }
 
-.partner-card-info{
+.partner-card-info {
     font-size: 12px;
     margin-top: 2rem;
     width: 100%;
@@ -807,7 +839,6 @@ ul {
     .team-left .team-img {
         margin-left: 10%;
     }
-    
     .team-right .team-img {
         margin-right: 10%;
     }
@@ -875,20 +906,19 @@ ul {
 }
 
 @media (max-width: 767px) {
-    .for_res{
+    .for_res {
         display: none;
     }
-    .for_res2{
+    .for_res2 {
         display: block;
     }
-    }
+}
 
 @media (min-width: 768px) {
-    .for_res2{
+    .for_res2 {
         display: none;
     }
-    .for_res{
+    .for_res {
         display: block;
     }
-    }
-
+}

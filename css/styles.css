@@ -740,7 +740,7 @@ ul {
 .team-box {
     border: 1px solid red;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 2.5rem;
     box-shadow: 7px 7px 40px -18px red;
     background-color: black;
     position: fixed;

@@ -294,6 +294,7 @@ ul {
     background: transparent;
     outline: none !important;
     cursor: pointer;
+    border-radius: 10rem;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
@@ -305,6 +306,7 @@ ul {
 
 .custom-btn:hover {
     color: white;
+    
 }
 
   /**** BTN No. 5 ****/
@@ -314,6 +316,7 @@ ul {
     line-height: 42px;
     padding: 0;
     border: none;
+    border-radius: 10rem;
   }
   .btn-5 span {
     position: relative;
@@ -326,6 +329,7 @@ ul {
     position: absolute;
     content: "";
     right: 0;
+    border-radius: 10rem;
     bottom: 0;
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
@@ -352,6 +356,7 @@ ul {
     top: 0;
     background: rgb(255, 0, 0);
     transition: all 0.3s ease;
+    border-radius: 10rem;
   }
   .btn-5 span:before {
     width: 2px;
@@ -372,9 +377,8 @@ ul {
     font-family: 'Samarkan Normal';
     font-size: 70px;
     position: absolute;
-    top: 46%;
+    top: 42%;
     left: 30%;
-    cursor: pointer;
 }
 
 
@@ -630,19 +634,35 @@ ul {
 }
 
 .back-botton .back-symbol {
-    border: 1px solid red;
-    border-radius: 50%;
     color: white;
     font-size: 1rem;
     height: 1.5rem;
     width: 1.5rem;
     text-align: center;
+    border-radius: 50%;
+    border-top: 1px solid rgba(255, 0, 0, 0);
+    border-left: 1px solid rgba(255, 0, 0, 0);
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+    border-right: 1px solid rgba(255, 0, 0, 0);
+    transition: border-right 0.3s, border-bottom 0.6s, border-left 0.9s, border-top 1.2s;
 }
 
 .back-botton .back-word {
-    color: red;
+    color: rgba(255, 0, 0, 0);
     font-size: 0.6rem;
     padding: 6px;
+}
+
+.back-botton:hover .back-symbol {
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    border-radius: 50%;
+}
+
+.back-botton:hover .back-word {
+    color: rgb(255, 0, 0);
 }
 
 .partner-box {
@@ -720,7 +740,7 @@ ul {
 .team-box {
     border: 1px solid red;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 2.5rem;
     box-shadow: 7px 7px 40px -18px red;
     background-color: black;
     position: fixed;

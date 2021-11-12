@@ -29,7 +29,6 @@ function toggleNavBar(){
     }
 }
 
-
-    document.getElementById("prarambh-word").onclick = function () {
-        location.href = "about.html";
-    };
+function autoChangeSpeaker() {
+    setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
+}

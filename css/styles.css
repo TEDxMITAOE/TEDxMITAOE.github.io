@@ -598,25 +598,46 @@ ul {
     }
 }
 
-.social-media-side-dock {
+.social-media-side-dock1 {
     font-size: 1.3rem;
     position: fixed;
-    top: 39vh;
+    top: 40%;
     right: 0.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 1.9;
 }
-
-.social-media-side-dock a {
-    width: fit-content;
+.social-media-side-dock2{
+    font-size: 1.3rem;
+    position: fixed;
+    top: 45%;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
 }
-
-.social-media-side-dock a i {
-    color: red;
+.social-media-side-dock3 {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 50%;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
 }
-
+.social-media-side-dock4 {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 55%;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.9;
+}
 .back-botton {
     position: relative;
     display: flex;

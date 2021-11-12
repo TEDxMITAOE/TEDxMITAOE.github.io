@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
       body{
+        height: 100vh;
         font-family: 'Montserrat', sans-serif;
         position:fixed;
       }
@@ -42,7 +43,7 @@
             position: absolute;
             margin-top: .5%  ;
             margin-left: 1.5%;
-            top: 10%;
+            bottom: 0;
             left: -1%;
             height: 85%;
             width: 43.575%;
@@ -238,16 +239,12 @@
        .all_center{
            text-align: center;
          }
-         .copy{
-           /* display: ; */
-           color: white;
+         .copyright{
+           position:absolute;
+           width: 100%;
+           bottom:0;
+           text-align: center;
          }
-        .col-lg-12 copy{
-          text-align: center; 
-          margin-top: 210px;
-           font-size: 14px;
-            margin-left: 40px;
-        }
          
         @media(max-width:869px){
           .contact_header{
@@ -278,14 +275,6 @@
         }
       }
   
-      @media(max-width:869px){
-          .col-lg-12 copy{
-                    margin-top:100px;
-                    margin-left:-100px;
-                    text-align: left;
-
-          }
-        } 
         @media(max-width:869px)
         {
           .navbar-brand{
@@ -399,14 +388,6 @@
           }
         }
     
-        @media(max-width:768px){
-          .copy{
-                  padding-top: 400px;
-                 margin-top:400px;
-                 margin-left:15px;
-
-          }
-        }
         @media(max-width:768px){
           .contact_container{
             width: 55px;
@@ -634,11 +615,6 @@ i {
   </div>
 
     </div>
-    
-    <div class="col-lg-12 copy" style="text-align: center; margin-top: 100px; font-size: 15px;"">
-      &copy; Copyrights 2021 All Rights Reserved.
-    </div>
-
     <div class="social-media-side-dock1">
       <div class='social-links'>
         <div class='social-btn flex-center' >
@@ -670,4 +646,12 @@ i {
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     </body>
+
+
+  <div class="bottom-shadow"></div>
+  <div class="copyright">
+
+    <span style="text-align: center;">&copy; Copyrights 2021 All Rights Reserved.</span>
+    
+  </div>
     </html>

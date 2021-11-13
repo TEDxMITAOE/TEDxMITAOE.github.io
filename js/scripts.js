@@ -28,7 +28,11 @@ function toggleNavBar(){
         NavButton.classList.remove("collapsed");
     }
 }
-
+let autoChangeVar;
 function autoChangeSpeaker() {
-    setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
+    autoChangeVar = setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
+}
+
+function stopAutoChangeSpeaker() {
+    clearInterval(autoChangeVar);
 }

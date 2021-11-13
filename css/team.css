@@ -1,0 +1,146 @@
+.team-box {
+    border: 1px solid red;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 7px 7px 40px -18px red;
+    background-color: black;
+    position: fixed;
+    top: 25%;
+    left: 5%;
+}
+
+@media (max-width: 1040px) {
+    .team-box {
+        display: none;
+    }
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.team-container {
+    height: 1.4rem;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    margin: 0.5rem 0rem;
+}
+
+.team-botton {
+    border: 0.2rem solid red;
+    border-radius: 1.7rem;
+    box-shadow: 7px 7px 40px -14px red;
+    color: red;
+    font-size: 1.3rem;
+    height: 3.4rem;
+    width: 14rem;
+    padding: 0.4rem 0rem;
+}
+
+.team-img {
+    width: auto;
+    text-align: center;
+}
+
+.team-img img {
+    border: 0.1rem solid red;
+    border-radius: 50%;
+    box-shadow: 7px 7px 40px -18px red;
+    height: 8rem;
+    width: 8rem;
+}
+
+.team-left .team-img {
+    margin-left: 15.5%;
+}
+
+.team-right .team-img {
+    margin-right: 15.5%;
+}
+
+@media (max-width: 1399px) {
+    .team-left .team-img {
+        margin-left: 10%;
+    }
+    .team-right .team-img {
+        margin-right: 10%;
+    }
+}
+
+.team-img h1 {
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    width: 13rem;
+    text-align: center;
+}
+
+.team-img p {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    width: 13rem;
+    text-align: center;
+    color: red;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0rem;
+    flex-wrap: wrap;
+}
+
+.team-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.team:hover .animation {
+    transform: translateY(-1.4rem);
+}
+
+.team-container {
+    height: 1.4rem;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    margin-top: 1rem;
+}
+
+.team .team-container .animation {
+    transition: all 0.5s;
+}

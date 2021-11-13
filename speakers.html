@@ -52,8 +52,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
       <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
-        <div style="font-size: 21.5px;">
-          <font style="color: red; font-weight: 800;">TED<sup>x</sup></font>MITAOE
+        <div style="font-size: 21.5px;display: flex;flex-direction: row;align-items: baseline;">
+          <font style="color: red; font-weight: 800;display: flex;flex-direction: row;align-items: end;">TED<sup>x</sup>
+          </font>MITAOE
         </div><br>
         <div style="font-size: 6.8px;">
           <font style="color: red;">x</font> = independently organised TED event
@@ -78,9 +79,7 @@
           <li>
             <div class="nav-item">
               <a class="nav-link" href="speakers.html">
-                <div>
-                  <font style="color: red;">SPEAKERS</font>
-                </div>
+                <div>SPEAKERS</div>
                 <div class="nav-animation">SPEAKERS</div>
               </a>
             </div>
@@ -125,52 +124,50 @@
     <div class="row" style="margin-top: 3rem;">
       <div class="col-lg-3" style="padding: 0px">
         <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(1);">
+          <div class="speaker-container" onclick="displaySpeaker(1);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(2);">
+          <div class="speaker-container" onclick="displaySpeaker(2);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Chaturvedi.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
         </div>
         <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(3);">
+          <div class="speaker-container" onclick="displaySpeaker(3);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Davos-1-4.jpg"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(4);">
+          <div class="speaker-container" onclick="displaySpeaker(4);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Rahul.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
         </div>
         <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(5);">
+          <div class="speaker-container" onclick="displaySpeaker(5);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Srushti.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(6);">
+          <div class="speaker-container" onclick="displaySpeaker(6);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Swapnil.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
         </div>
         <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(7);">
+          <div class="speaker-container" onclick="displaySpeaker(7);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(8);">
+          <div class="speaker-container" onclick="displaySpeaker(8);stopAutoChangeSpeaker();">
             <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
             <div class="speaker-name">Swapnil Joshi</div>
           </div>
         </div>
       </div>
-      <img class="Xsymbol" style="height: 90vh; width: auto; top: 10%; left: 17%; max-width: 83vw;"
-        src="assets/images/Index/Xsymbol.png">
+      <img class="Xsymbol" style="height: 90vh; width: auto; top: 10%; left: 17%; max-width: 83vw;" src="assets/images/Index/Xsymbol.png">
       <a href="index.html" class="back-botton">
-        <div class="back-symbol">
-          << /div>
-            <div class="back-word">BACK</div>
+        <div class="back-symbol"><</div>
+        <div class="back-word">BACK</div>
       </a>
       <div class="col-lg-7">
         <div id="1" class="speaker-card-active">

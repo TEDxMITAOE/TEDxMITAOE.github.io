@@ -251,6 +251,22 @@
   <script src="css/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>
+    let PreviousSpeakerCardIndex = 1;
+    function displaySpeaker(SpeakerId) {
+        let element = document.getElementById(PreviousSpeakerCardIndex);
+        element.classList.replace("speaker-card-active", "speaker-card");
+        element = document.getElementById(SpeakerId);
+        element.classList.replace("speaker-card", "speaker-card-active");
+        PreviousSpeakerCardIndex = SpeakerId;
+    }
+    let autoChangeVar;
+    function autoChangeSpeaker() {
+        autoChangeVar = setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
+    }
+
+    function stopAutoChangeSpeaker() {
+        clearInterval(autoChangeVar);
+    }
     window.onload = autoChangeSpeaker();
   </script>
 

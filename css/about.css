@@ -1,0 +1,15 @@
+.about-event-container {
+    height: 35vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-event-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.about-event-move {
+    transform: translateY(-33.5vh);
+}

@@ -394,17 +394,18 @@
       right: 0;
       cursor: pointer;
       height: 50px;
-      width: 50px;
+      width: 30px;
       font-family: helvetica;
-      font-size: 25px;
+      font-size: 20px;
       color: rgb(255, 255, 255);
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
       background: black;
       transition: 1s;
+      transition-timing-function: ease-in-out;
     }
 
     .social-btn span {
-      width: 0px;
+      color: transparent;
       font-size: 15px;
       padding-left: 10px;
       overflow: hidden;
@@ -418,10 +419,10 @@
     }
 
     .social-btn:hover span {
+      color: #fff;
       padding: 2px;
       width: max-content;
     }
-
     i {
       color: #ff0000;
     }

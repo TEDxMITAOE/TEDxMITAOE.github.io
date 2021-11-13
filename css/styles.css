@@ -892,6 +892,30 @@ ul {
     flex-wrap: wrap;
 }
 
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.team:hover .animation {
+    transform: translateY(-1.4rem);
+}
+
+.team-container {
+    height: 1.4rem;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    margin-top: 1rem;
+}
+
+.team .team-container .animation {
+    transition: all 0.5s;
+}
+
 .bottom-shadow {
     position: fixed;
     bottom: 0;

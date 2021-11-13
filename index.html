@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | TEDxMITAOE</title>
-    <meta name="description" content="An independently organised event devoted to uncover Ideas Worth Spreading & spark engrossing conversations, celebrating ideas, innovations & humanity.">
-    <!-- Site Icons -->
-    <link rel="apple-touch-icon" href="assets/favicon/faviconX.png" type="image/png">
-    <link rel="icon" href="assets/favicon/faviconX.png" type="image/png">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B8L4R2LFQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-8B8L4R2LFQ');
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME | TEDxMITAOE</title>
+  <meta name="description"
+    content="An independently organised event devoted to uncover Ideas Worth Spreading & spark engrossing conversations, celebrating ideas, innovations & humanity.">
+  <!-- Site Icons -->
+  <link rel="apple-touch-icon" href="assets/favicon/faviconX.png" type="image/png">
+  <link rel="icon" href="assets/favicon/faviconX.png" type="image/png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B8L4R2LFQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-8B8L4R2LFQ');
+  </script>
+  <style>
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-links {
+      display: flex;
+    }
+
+    .social-btn {
+      right: 0;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      font-family: helvetica;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+      background: black;
+      transition: 1s;
+    }
+
+    .social-btn span {
+      width: 0px;
+      font-size: 15px;
+      padding-left: 10px;
+      overflow: hidden;
+      transition: 1s;
+      text-align: center;
+    }
+
+    .social-btn:hover {
+      width: 150px;
+      border-radius: 5px;
+    }
+
+    .social-btn:hover span {
+      padding: 2px;
+      width: max-content;
+    }
+
+    i {
+      color: #ff0000;
+    }
+  </style>
+</head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
@@ -72,147 +123,203 @@
   </nav>
   <div class="container">
     <div class="row">
-        <div class="col-lg-4" style="padding-left: 0px;">
-          <div class="info">
-            <div style="line-height: 1.1;">
-                <div style="font-size: 20px;">Pune</div>
-                <div style="font-size: 50px; color: red; margin-top: 0px;">05-DEC</div>
-            </div>
-            <div style="font-size: 15px; color: rgba(255,255,255,0.50); margin-top: 10px;">
-              <div>An event dedicated to celebrating the genesis of ideas- ‘PRARAMBH’.</div><br><div>Book your tickets now to experience the confluence of thoughts from the brightest of minds!</div>
-
-              
-            </div>
-          <button class="custom-btn btn-5"><span>BOOK NOW</span></button>
+      <div class="col-lg-4" style="padding-left: 0px;">
+        <div class="info">
+          <div style="line-height: 1.1;">
+            <div style="font-size: 20px;">Pune</div>
+            <div style="font-size: 50px; color: red; margin-top: 0px;">05-DEC</div>
           </div>
-          <img class="Xsymbol" src="assets/images/Index/Xsymbol.png">
+          <div style="font-size: 15px; color: rgba(255,255,255,0.50); margin-top: 10px;">
+            <div>‘PRARAMBH’ - An event dedicated to celebrating the genesis of idea.</div><br>
+            <div>Book your tickets now to experience the confluence of thoughts from the brightest of minds!</div>
+          </div>
+
+          <button class="custom-btn btn-5" onclick="popup('tedxmitaoe-323323');"><span>BOOK NOW</span></button>
+
+          <!-- <button onclick="popup('tedxmitaoe-323323');" class="custom-btn btn-5">Register Now</button> -->
+
+          <noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript>
+          <script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js"
+            type="text/javascript"></script>
+
         </div>
-        <div class="col-lg-6" style="padding: 0px;">
-          <div class="prarambh">
+        <img class="Xsymbol" src="assets/images/Index/Xsymbol.png">
+      </div>
+      <div class="col-lg-6" style="padding: 0px;">
+        <div class="prarambh">
           <div class="container" style="top: 20%;left: 9%;">
             <div class="wrapper" style="animation-delay: 0s;">
-                <img class="round-img" src="assets/images/Speakers/Anshu1.png">
-                <img class="round-img" src="assets/images/Speakers/Chaturvedi.png">
-                <img class="round-img" src="assets/images/Speakers/Davos-1-4.jpg">
-                <img class="round-img" src="assets/images/Speakers/Rahul.png">
-                <img class="round-img" src="assets/images/Speakers/Anshu1.png">
+              <img class="round-img" src="assets/images/Speakers/Anshu1.png">
+              <img class="round-img" src="assets/images/Speakers/Chaturvedi.png">
+              <img class="round-img" src="assets/images/Speakers/Davos-1-4.jpg">
+              <img class="round-img" src="assets/images/Speakers/Rahul.png">
+              <img class="round-img" src="assets/images/Speakers/Anshu1.png">
             </div>
           </div>
           <a href="sponsors.html">
-          <div class="round-img-hover" style="top: 27%;left: 15%;">
-            <div class="round-img-box">
-              <div class="round-img-sub-box">
-                <div class="sub-box-1"></div> <div class="sub-box-2"></div>
+            <div class="round-img-hover" style="top: 27%;left: 15%;">
+              <div class="round-img-box">
+                <div class="round-img-sub-box">
+                  <div class="sub-box-1"></div>
+                  <div class="sub-box-2"></div>
+                </div>
+                <div class="round-img-sub-box">
+                  <div class="sub-box-3"></div>
+                  <div class="sub-box-4"></div>
+                </div>
+                <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-sub-box">
-                <div class="sub-box-3"></div> <div class="sub-box-4"></div>
+              <div class="round-img-info">
+                <h6>2021</h6>
+                <p>Sponsors</p>
               </div>
-              <div class="round-img-red-box"></div>
             </div>
-            <div class="round-img-info"><h6>2021</h6><p>Sponsors</p></div>
-          </div>
           </a>
           <div class="container" style="top: 20%;left: 65%;">
             <div class="wrapper" style="animation-delay: 0.75s;">
-                <img class="round-img" src="assets/images/Team/Adarsh Zamwar.jpg">
-                <img class="round-img" src="assets/images/Team/Aditya.png">
-                <img class="round-img" src="assets/images/Team/AdityaC.png">
-                <img class="round-img" src="assets/images/Team/Amey.png">
-                <img class="round-img" src="assets/images/Team/Adarsh Zamwar.jpg">
+              <img class="round-img" src="assets/images/Team/Adarsh Zamwar.jpg">
+              <img class="round-img" src="assets/images/Team/Aditya.png">
+              <img class="round-img" src="assets/images/Team/AdityaC.png">
+              <img class="round-img" src="assets/images/Team/Amey.png">
+              <img class="round-img" src="assets/images/Team/Adarsh Zamwar.jpg">
             </div>
           </div>
           <a href="speakers.html">
             <div class="round-img-hover" style="top: 27%;left: 71%;">
               <div class="round-img-box">
                 <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div> <div class="sub-box-2"></div>
+                  <div class="sub-box-1"></div>
+                  <div class="sub-box-2"></div>
                 </div>
                 <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div> <div class="sub-box-4"></div>
+                  <div class="sub-box-3"></div>
+                  <div class="sub-box-4"></div>
                 </div>
                 <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info"><h6>2021</h6><p>Speakers</p></div>
+              <div class="round-img-info">
+                <h6>2021</h6>
+                <p>Speakers</p>
+              </div>
             </div>
-            </a>
+          </a>
           <div class="container" style="left: 9%;top: 60%;">
             <div class="wrapper" style="animation-delay: 1.5s;">
-                <img class="round-img" src="assets/images/Team/Namrata.png">
-                <img class="round-img" src="assets/images/Team/Niranjan_Girhe.jpg">
-                <img class="round-img" src="assets/images/Team/Piyush Sonvane .JPG">
-                <img class="round-img" src="assets/images/Team/Pranav patil.jpg">
-                <img class="round-img" src="assets/images/Team/Namrata.png">
+              <img class="round-img" src="assets/images/Team/Namrata.png">
+              <img class="round-img" src="assets/images/Team/Niranjan_Girhe.jpg">
+              <img class="round-img" src="assets/images/Team/Piyush Sonvane .JPG">
+              <img class="round-img" src="assets/images/Team/Pranav patil.jpg">
+              <img class="round-img" src="assets/images/Team/Namrata.png">
             </div>
           </div>
           <a href="team.html">
             <div class="round-img-hover" style="left: 15%;top: 67%;">
               <div class="round-img-box">
                 <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div> <div class="sub-box-2"></div>
+                  <div class="sub-box-1"></div>
+                  <div class="sub-box-2"></div>
                 </div>
                 <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div> <div class="sub-box-4"></div>
+                  <div class="sub-box-3"></div>
+                  <div class="sub-box-4"></div>
                 </div>
                 <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info"><h6>2021</h6><p>Team</p></div>
+              <div class="round-img-info">
+                <h6>2021</h6>
+                <p>Team</p>
+              </div>
             </div>
-            </a>
+          </a>
           <div class="container" style="top: 60%;left: 65%;">
             <div class="wrapper" style="animation-delay: 2.25s;">
-                <img class="round-img" src="assets/images/Speakers/Anshu1.png">
-                <img class="round-img" src="assets/images/Team/Pranav patil.jpg">
-                <img class="round-img" src="assets/images/Team/sahilbhutada.JPG">
-                <img class="round-img" src="assets/images/Speakers/Rahul.png">
-                <img class="round-img" src="assets/images/Speakers/Anshu1.png">
+              <img class="round-img" src="assets/images/Speakers/Anshu1.png">
+              <img class="round-img" src="assets/images/Team/Pranav patil.jpg">
+              <img class="round-img" src="assets/images/Team/sahilbhutada.JPG">
+              <img class="round-img" src="assets/images/Speakers/Rahul.png">
+              <img class="round-img" src="assets/images/Speakers/Anshu1.png">
             </div>
           </div>
           <a href="previous.html">
             <div class="round-img-hover" style="top: 67%;left: 71%;">
               <div class="round-img-box">
                 <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div> <div class="sub-box-2"></div>
+                  <div class="sub-box-1"></div>
+                  <div class="sub-box-2"></div>
                 </div>
                 <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div> <div class="sub-box-4"></div>
+                  <div class="sub-box-3"></div>
+                  <div class="sub-box-4"></div>
                 </div>
                 <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info"><h6>2019-20</h6><p>Previous Events</p></div>
+              <div class="round-img-info">
+                <h6>2019-20</h6>
+                <p>Previous Events</p>
+              </div>
             </div>
           </a>
           <div class="prarambh-word">prarambh</div>
           <a href="/about.html">
-              <div class="round-img-hover" style="top: 42%;left: 42.5%;">
-                  <div class="round-img-box">
-                    <div class="round-img-sub-box">
-                      <div class="sub-box-1"></div> <div class="sub-box-2"></div>
-                    </div>
-                    <div class="round-img-sub-box">
-                      <div class="sub-box-3"></div> <div class="sub-box-4"></div>
-                    </div>
-                    <div class="round-img-red-box"></div>
-                  </div>
-                <div class="round-img-info"><h6>2021</h6><p>Theme</p></div>
+            <div class="round-img-hover" style="top: 42%;left: 42.5%;">
+              <div class="round-img-box">
+                <div class="round-img-sub-box">
+                  <div class="sub-box-1"></div>
+                  <div class="sub-box-2"></div>
+                </div>
+                <div class="round-img-sub-box">
+                  <div class="sub-box-3"></div>
+                  <div class="sub-box-4"></div>
+                </div>
+                <div class="round-img-red-box"></div>
               </div>
+              <div class="round-img-info">
+                <h6>2021</h6>
+                <p>Theme</p>
+              </div>
+            </div>
           </a>
-          </div>
         </div>
+      </div>
     </div>
   </div>
+
 
   <!-- <div class="col-lg-12" style="text-align: center; margin-top: 50px; font-size: 15px;">
     &copy; Copyrights 2021 All Rights Reserved.
   </div> -->
 
-  <div class="social-media-side-dock">
-    <a href="https://twitter.com/TEDxMITAOE"> <i class="fab fa-twitter"></i></a>
-    <a href="https://www.facebook.com/TEDxMITAOE"> <i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/tedxmitaoe/"> <i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/company/tedxmitaoe/"> <i class="fab fa-linkedin"></i></a>
+  <div class="social-media-side-dock1">
+    <div class='social-links'>
+      <div class='social-btn flex-center'>
+        <i class="fab fa-twitter" onclick="redirect(1)"></i><span onclick="redirect(1)">@TEDxMITAOE</span>
+      </div>
+    </div>
+  </div>
+  <div class="social-media-side-dock2">
+    <div class='social-links'>
+      <div class='social-btn flex-center'>
+        <i class="fab fa-facebook" onclick="redirect(2)"></i><span onclick="redirect(2)">@TEDxMITAOE</span>
+      </div>
+    </div>
+  </div>
+  <div class="social-media-side-dock3">
+    <div class='social-links'>
+      <div class='social-btn flex-center'>
+        <i class="fab fa-linkedin" onclick="redirect(3)"></i><span onclick="redirect(3)">@tedxmitaoe</span>
+      </div>
+    </div>
+  </div>
+  <div class="social-media-side-dock4">
+    <div class='social-links'>
+      <div class='social-btn flex-center'>
+        <i class="fab fa-instagram" onclick="redirect(4)"></i><span onclick="redirect(4)">@tedxmitaoe</span>
+      </div>
+    </div>
   </div>
   <!-- Script Files -->
   <script src="css/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

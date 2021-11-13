@@ -17,10 +17,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <style>
     body {
-      height: 100vh;
+      height: fit-content;
       width: 100%;
       font-family: 'Montserrat', sans-serif;
-      position: fixed;
+      
     }
 
     .social_handles {
@@ -28,7 +28,9 @@
       position: relative;
       left: 50%;
     }
-
+    form{
+      padding-bottom: 100px;
+    }
     .navbar-toggler-icon {
       display: inline-block;
       width: 1.5em;
@@ -260,9 +262,9 @@
     }
 
     .copyright {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
+      margin-top: 30px;
+      color: white;
+      font-size: 15px;
       text-align: center;
     }
 
@@ -272,7 +274,11 @@
         text-align: center;
         width: 70%;
       }
-
+      .copyright{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+      }
 
 
       .Name {
@@ -519,8 +525,15 @@
           <br>
           <button class="Submit btn" style="color:white">Submit</button>
         </div>
+        <div class="copyright">
+
+          <span style="text-align: center;">&copy; Copyrights 2021 All Rights Reserved.</span>
+        
+        </div>
     </div>
+
     </form>
+    
 
     <!-- <div id="left" class="social_handles">
       <div class="div_logo">
@@ -583,11 +596,9 @@
 </body>
 
 
-<div class="bottom-shadow"></div>
-<div class="copyright">
-
-  <span style="text-align: center;">&copy; Copyrights 2021 All Rights Reserved.</span>
+<div class="bottom-shadow">
 
 </div>
+
 
 </html>

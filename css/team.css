@@ -95,7 +95,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    margin: 2rem 0rem;
+    padding: 2rem 0rem;
     flex-wrap: wrap;
 }
 
@@ -108,6 +108,7 @@
     font-size: 0.9rem;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2rem;
 }
 
 .team-right {
@@ -119,6 +120,7 @@
     font-size: 0.9rem;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2rem;
 }
 
 .team {
@@ -143,4 +145,13 @@
 
 .team .team-container .animation {
     transition: all 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
 }

@@ -29,9 +29,15 @@ function toggleNavBar() {
     }
 }
 
+let autoChangeVar;
 function autoChangeSpeaker() {
-    setInterval(function () { if (PreviousSpeakerCardIndex >= 8) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
+    autoChangeVar = setInterval(function(){ if(PreviousSpeakerCardIndex >= 8){ displaySpeaker(1); }else{ displaySpeaker(PreviousSpeakerCardIndex+1); } }, 3000);
 }
+
+function stopAutoChangeSpeaker() {
+    clearInterval(autoChangeVar);
+}
+
 function redirect(key) {
     switch (key) {
         case 1: window.open("https://go.tedxmitaoe.com/twitter", "_blank").focus();

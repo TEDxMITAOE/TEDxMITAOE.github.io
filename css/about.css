@@ -1,5 +1,4 @@
 .about-event-container {
-    height: 35vh;
     width: 100%;
     overflow: hidden;
 }
@@ -11,5 +10,79 @@
 }
 
 .about-event-move {
-    transform: translateY(-33.5vh);
+    transform: translateY(-50%);
+}
+
+.custom-btn {
+    margin-bottom: 1rem;
+}
+
+.Xsymbol_about{
+    position: absolute;
+    margin-top: .5%  ;
+    margin-left: 1.5%;
+    bottom: 0%;
+    left: -1%;
+    height: 85%;
+    width: 40%;
+  }
+
+  button , a:hover{
+    color: red;
+  }
+
+  @media (max-width:768px)
+  {
+    .Xsymbol_about{
+        height: 100%;
+        width: 100%;
+        margin-top: 11%;
+      }
+  }
+
+  .about{
+      color:#fff;
+      font-size: 40px;
+  }
+
+  .event{
+      color: red;
+      font-size: 70px;
+      padding-left: 10px;
+  }  
+  
+  p{
+    margin-top: 10px;
+    color:rgba(255, 255, 255, 0.664);
+    text-align:justify;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100 !important;
+  }
+
+  a{
+      list-style: none;
+      color: red;
+      text-decoration: none;
+  }
+
+  .col-1{
+    display: inline-block;
+    width: 100%;
+    margin-top: 8%; 
+  }
+  
+  @media (max-width:441px)
+  {
+    .Xsymbol_about{
+        height: 70%;
+        width: 90%;
+        margin-top: 13%;
+    }
+    .about{
+      font-size: 9vw;
+    }
+    .event{
+      font-size: 17vw;
+    }  
 }

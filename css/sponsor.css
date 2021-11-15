@@ -53,14 +53,17 @@
 }
 
 .partner-card-img {
-    box-shadow: 0 0 0rem 0.02rem white;
-    width: 100%;
+   
+    width: 50%;
     height: 70%;
     overflow: hidden;
 }
 
 .partner-card-img img {
-    width: 100%;
+    width: 80%;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 20%;
 }
 
 .partner-card-info {

@@ -72,16 +72,18 @@
         font-size: 25px;
       }
       div::-webkit-scrollbar {
-      width: 2px;
+      scrollbar-width: thin;
       color: red;
       margin-right: 20px;
+      width:10px;
     }
 
     div::-webkit-scrollbar-thumb {
       background-color: red;
-      width: 2px;
-      border-radius: 5px;
+      border-radius: 20px;
       margin-right: 20px;
+      scrollbar-width: 2%;
+      width: 10px;
     }
     }
 
@@ -105,10 +107,12 @@
       grid-auto-flow: column;
       gap: 1rem;
       overflow: auto;
-      padding-top: 20px;
+      padding-top: 25px;
       padding-bottom: 1rem;
       padding-right: 20px;
-      padding-left: 20px;
+      padding-left: 15px;
+  
+
     }
 
     .cards-wrapper .card {

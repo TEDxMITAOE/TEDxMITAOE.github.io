@@ -24,7 +24,7 @@
     </script>
     
 </head>
-<body onresize="aboutEventSizeUpdate();">
+<body onresize="hideDetails();">
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
     <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
@@ -113,32 +113,29 @@
             </div>
         </div>
         </div>
-</div>
-        <div>
-            <img class="Xsymbol_about" style="z-index: -5;" src="assets/images/Index/Xsymbol.png">
-        </div>
-        <div class="bottom-shadow"></div>
-        <!-- Script Files -->
+    </div>
+  <div>
+      <img class="Xsymbol_about" style="z-index: -5;" src="assets/images/Index/Xsymbol.png">
+  </div>
+  <div class="bottom-shadow"></div>
+  <!-- Script Files -->
   <script src="css/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    function aboutEventSizeUpdate() {
-      var aboutEvent1 = document.getElementById('about-event-1').clientHeight;
-      var aboutEvent2 = document.getElementById('about-event-2').clientHeight;
-      let aboutHeight = Math.max(aboutEvent1,aboutEvent2) + "px";
-      console.log(aboutHeight);
-      document.getElementsByClassName("about-event-container")[0].style.height = aboutHeight;
-    }
-
+    document.getElementsByClassName("about-event-container")[0].style.height = document.getElementById('about-event-1').clientHeight + "px";
+    
     function showDetails() {
-        document.getElementsByClassName("about-event-wrapper")[0].classList.add("about-event-move");
+        var translateHeight = document.getElementById('about-event-1').clientHeight;
+        document.getElementsByClassName("about-event-wrapper")[0].style.transform = "translateY(-" + translateHeight + "px)";
+        var aboutHeight = document.getElementById('about-event-2').clientHeight + "px";
+        document.getElementsByClassName("about-event-container")[0].style.height = aboutHeight;
     }
 
     function hideDetails() {
-        document.getElementsByClassName("about-event-wrapper")[0].classList.remove("about-event-move");
+        document.getElementsByClassName("about-event-wrapper")[0].style.transform = "translateY(0px)";
+        var aboutHeight = document.getElementById('about-event-1').clientHeight + "px";
+        document.getElementsByClassName("about-event-container")[0].style.height = aboutHeight;
     }
-
-    aboutEventSizeUpdate();
   </script>
 </body>
 </html>

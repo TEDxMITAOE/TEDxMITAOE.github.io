@@ -55,20 +55,21 @@
 .partner-card-img {
    
     width: 50%;
-    height: 70%;
-    overflow: hidden;
+    height: 30%;
+    
 }
 
 .partner-card-img img {
     width: 80%;
     align-items: center;
-    margin-left: 30%;
+    margin-left: 60%;
     margin-top: 20%;
+    overflow-y: hidden;
 }
 
 .partner-card-info {
     font-size: 12px;
-    margin-top: 2rem;
+    margin-top: 7rem;
     width: 100%;
     text-align: center;
 }

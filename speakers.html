@@ -55,11 +55,28 @@
       display: none;
     }
 
-    @media(max-width: 990px) {
+    .mobile-shadow-right {
+      position: absolute;
+      width: 20px;
+      height: 120px;
+      top: 95px;
+      right: 0;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    .mobile-shadow-left {
+      position: absolute;
+      width: 20px;
+      height: 120px;
+      top: 95px;
+      left: 0;
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    @media(max-width: 991px) {
       #desktop {
         display: none;
       }
-
       #mobile {
         display: block;
       }
@@ -76,15 +93,14 @@
       color: red;
       margin-right: 20px;
       width:10px;
-    }
-
-    div::-webkit-scrollbar-thumb {
-      background-color: red;
-      border-radius: 20px;
-      margin-right: 20px;
-      scrollbar-width: 2%;
-      width: 10px;
-    }
+      }
+      div::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 20px;
+        margin-right: 20px;
+        scrollbar-width: 2%;
+        width: 10px;
+      }
     }
 
     :root {
@@ -215,6 +231,8 @@
       <div class="card speaker-img-wrapper" onclick="displaySpeaker(7);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
       <div class="card speaker-img-wrapper" onclick="displaySpeaker(8);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
     </div>
+    <div class="mobile-shadow-left"></div>
+    <div class="mobile-shadow-right"></div>
   </section>
   <section>
     <div class="container">

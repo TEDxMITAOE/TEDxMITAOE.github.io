@@ -9,10 +9,6 @@
     transition: all 1s;
 }
 
-.about-event-move {
-    transform: translateY(-50%);
-}
-
 .custom-btn {
     margin-bottom: 1rem;
 }

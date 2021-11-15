@@ -237,29 +237,18 @@ ul {
 .back-botton .back-symbol {
     color: white;
     font-size: 1rem;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.55rem;
+    width: 1.55rem;
     text-align: center;
     border-radius: 50%;
-    border-top: 1px solid rgba(255, 0, 0, 0);
-    border-left: 1px solid rgba(255, 0, 0, 0);
-    border-bottom: 1px solid rgba(255, 0, 0, 0);
-    border-right: 1px solid rgba(255, 0, 0, 0);
-    transition: border-right 0.3s, border-bottom 0.6s, border-left 0.9s, border-top 1.2s;
+    border: 1px solid red;
 }
 
 .back-botton .back-word {
     color: rgba(255, 0, 0, 0);
     font-size: 0.6rem;
     padding: 6px;
-}
-
-.back-botton:hover .back-symbol {
-    border-top: 1px solid red;
-    border-left: 1px solid red;
-    border-bottom: 1px solid red;
-    border-right: 1px solid red;
-    border-radius: 50%;
+    transition: all 1s;
 }
 
 .back-botton:hover .back-word {

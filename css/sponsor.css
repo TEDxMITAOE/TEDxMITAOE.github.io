@@ -23,6 +23,9 @@
     width: 100%;
     text-align: center
 }
+.text{
+    text-decoration: none;
+}
 .partner img {
     width: 5rem;
 }

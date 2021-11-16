@@ -29,6 +29,34 @@
   a{
     text-decoration: none;
   }
+  @media(max-width:500px){
+    .partner-card-active{
+        padding: 1rem 12%;
+        display: block;
+        height: 20rem;
+        margin-top: 4rem;
+        border: 1px solid red;
+        border-radius: 2rem;
+        box-shadow: 5px 6px 17px -2px red;
+        background-color: black;
+        margin-bottom: 2rem;
+    }
+    .partner-card-info {
+    font-size: 15px;
+    margin-top: 6rem;
+    width: 100%;
+    text-align: center;
+}
+  }
+ @media(max-width:990px){
+ .partner-card-active{
+   margin-bottom: 2rem;
+ }
+ .Xsymbol{
+ display:none;
+ } 
+}
+
 </style>
 </head>
 
@@ -88,73 +116,84 @@
             <div class="partner-container">
               <div class="animation">
                 <div><a style=" color:white;" href="#1">OUR  FOOD PARTNER</a></div>
-                <div style="color: red;">OUR FOOD PARTNER</div>
+                <div> <a style="color: red;" href="#1">OUR FOOD PARTNER</a></div>
                 <div class ="text">
                 <div style="color:red;" font size="12px;">text written</div>
               </div>
               </div>
             </div>
-            <img src="assets/images/sponsors/food_partner.jpeg">
+            <div><a style=" color:white;" href="#1">
+            <img src="assets/images/sponsors/food_partner.jpeg"></a>
+            </div>
           </div>
           <div class="partner" onclick="displayPartner(2);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style=" color:white;" href="#2">OUR DESIGN PARTNER</a></div>
-                <div style="color: red;">OUR DESIGN PARTNER</div>
+                <div> <a style="color: red;" href="#2">OUR DESIGN PARTNER</a></div>
               </div>
             </div>
+            <div><a style=" color:white;" href="#2">
             <img src="assets/images/sponsors/Design_partner.jpeg">
+            </a></div>
           </div>
           <div class="partner" onclick="displayPartner(3);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style="color:white;" href="#3"> VIDEOGRAPHY PARTNER</a></div>
-                <div style="color: red;">OUR VIDEOGRAPHY PARTNER</div>
+                <div><a style="color: red;">OUR VIDEOGRAPHY PARTNER</a></div>
               </div>
             </div>
+            <div><a style=" color:white;" href="#3">
             <img src="assets/images/sponsors/videiography.jpeg">
+            </a>
+            </div>
           </div>
           <div class="partner" onclick="displayPartner(4);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style="color: white;" href="#4">GIFTING PARTNER</a></div>
-                <div style="color: red;">OUR GIFTING PARTNER</div>
+                <div> <a style="color: red;" href="#4">OUR GIFTING PARTNER</a></div>
               </div>
             </div>
-            <img src="assets/images/sponsors/Gifting.png">
+            <div><a style=" color:white;" href="#4">
+            <img src="assets/images/sponsors/Gifting.png"></a></div>
           </div>
           <div class="partner" onclick="displayPartner(5);">
             <div class="partner-container">
               <div class="animation">
-                <div><a style=color:white;" href="#5">LED SIGNAGE PARTNER</a></div>
-                <div style="color: red;">OUR LED SIGNAGE PARTNER</div>
+                <div><a style="color:white;" href="#5">LED SIGNAGE PARTNER</a></div>
+                <div> <a style="color: red;"  href="#5">OUR LED SIGNAGE PARTNER</a></div>
               </div>
             </div>
-            <img src="assets/images/sponsors/LED_signage_partner.jpeg">
+            <div><a style=" color:white;" href="#5">
+            <img src="assets/images/sponsors/LED_signage_partner.jpeg"></a></div>
           </div>
           <div class="partner" onclick="displayPartner(6);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style="color: white;" href="#6">  COSMETIC PARTNER</a></div>
-                <div style="color: red;">OUR COSMETIC PARTNER</div>
+                <div><a style="color: red;"  href="#6">OUR COSMETIC PARTNER</a></div>
               </div>
             </div>
-            <img src="assets/images/sponsors/Cosmetic_partner.jpeg">
+            <div><a style=" color:white;" href="#6">
+            <img src="assets/images/sponsors/Cosmetic_partner.jpeg"></a></div>
           </div>
           <div class="partner" onclick="displayPartner(7);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style="color: white;" href="#7">OUR TRAVEL PARTNER</a></div>
-                <div style="color: red;">OUR TRAVEL PARTNER</div>
+                <div> <a style="color: red;"  href="#7">OUR TRAVEL PARTNER</a></div>
               </div>
             </div>
-            <img src="assets/images/sponsors/Travel_partner.jpeg">
+            <div><a style=" color:white;" href="#7">
+            <img src="assets/images/sponsors/Travel_partner.jpeg"></a></div>
           </div>
           <div class="partner" onclick="displayPartner(8);">
             <div class="partner-container">
               <div class="animation">
                 <div><a style="color: white;" href="#8">OUR MEDIA PARTNER</a></div>
-                <div style="color: red;">OUR MEDIA PARTNER</div>
+                <div><a style="color: red;"  href="#8">OUR MEDIA PARTNER</a></div>
               </div>
             </div>
             <img src="assets/images/sponsors/Media_partner.jpeg">
@@ -170,7 +209,7 @@
       </a>
       <div class="col-lg-7">
         <div id="1" class="partner-card-active">
-          <div class="partner-card-img"><img src="assets/images/sponsors/food_partner.jpeg"></div>
+          <div class="partner-card-img"><div id="11"><img src="assets/images/sponsors/food_partner.jpeg"></div></div>
           <div class="partner-card-info">
             OUR FOOD PARTNER
           </div>

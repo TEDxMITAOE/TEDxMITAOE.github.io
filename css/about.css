@@ -33,6 +33,11 @@
         height: 100%;
         width: 100%;
         margin-top: 11%;
+        margin-left: 5%;
+      }
+      img{
+        -webkit-filter: blur(5px);
+        filter: brightness(60%);
       }
   }
 
@@ -74,11 +79,16 @@
         height: 70%;
         width: 90%;
         margin-top: 13%;
+        margin-left: 5%;
     }
     .about{
       font-size: 9vw;
     }
     .event{
       font-size: 17vw;
-    }  
+    } 
+    img{
+      -webkit-filter: blur(5px);
+      filter: brightness(60%);
+    } 
 }

@@ -17,16 +17,9 @@
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
-.Xsymbol{
-    height: 90vh; 
-    width: auto;
-     top: 10%; 
-     left: 17%; 
-     max-width: 83vw;
-}
 .text{
     font-size: 12px;
-    margin-top: 2rem;
+    margin-top: rem;
     width: 100%;
     text-align: center
 }

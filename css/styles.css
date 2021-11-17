@@ -67,7 +67,6 @@ ul {
         display: block;
     }
 }
-
 @media (max-width:991px) {
     .nav-item {
         padding: 1.5rem;
@@ -89,14 +88,14 @@ ul {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    color: red;
+    color: white;
     margin-top: 30px;
     margin-left: 30px;
     font-size: 11px;
 }
 
 .custom-btn:hover {
-    color: white;
+    color: red;
 }
 
 /**** BTN No. 5 ****/

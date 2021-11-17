@@ -21,8 +21,24 @@
     font-size: 12px;
     margin-top: rem;
     width: 100%;
-    text-align: center
+    text-align: center;
 }
+.partner-card-info {
+    font-size: 15px;
+    margin-top: 7rem;
+    width: 100%;
+    text-align: center;
+}
+@media(max-width:411px){
+ .text{
+     height:fit-content;
+     text-align: left;
+ }
+.partner-card-info{
+    margin-top: 3rem;
+}
+}
+
 .text{
     text-decoration: none;
 }
@@ -75,9 +91,4 @@
     overflow-y: hidden;
 }
 
-.partner-card-info {
-    font-size: 15px;
-    margin-top: 7rem;
-    width: 100%;
-    text-align: center;
-}
+

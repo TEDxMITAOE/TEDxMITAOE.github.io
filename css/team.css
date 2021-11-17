@@ -9,6 +9,7 @@
     left: 5%;
 }
 
+
 @media (max-width: 1040px) {
     .team-box {
         display: none;
@@ -38,10 +39,10 @@
     box-shadow: 7px 7px 40px -14px red;
     color: red;
     font-size: 1.3rem;
-    height: 3.4rem;
+    
     width: 14rem;
     padding: 0.4rem 0rem;
-}
+} 
 
 .team-img {
     width: auto;

@@ -27,24 +27,134 @@
     gtag('config', 'G-8B8L4R2LFQ');
   </script>
   <style>
+    .Xsymbol{
+      height: 90vh; width: auto; top: 10%; left: 17%; max-width: 83vw;
+    }
     .speaker-card-active {
       padding: 40px;
     }
-
+    @media(max-width:441){
+     
+      .Xsymbol {
+       height:88vh;
+       padding-right: 10%;
+       margin-bottom: 60%;
+      }
+ 
+    }
     @media(max-width: 782px) {
       .row {
         justify-content: space-evenly;
       }
 
       .Xsymbol {
-        width: max-content;
-        height: 100vh;
+       height:max-content;
 
+       padding-right: 10%;
+       margin-bottom: 60%;
       }
 
       .speaker-card-active {
         height: 96%;
       }
+    }
+
+    #desktop {
+      display: block;
+    }
+
+    #mobile {
+      display: none;
+    }
+
+    .mobile-shadow-right {
+      position: absolute;
+      width: 20px;
+      height: 120px;
+      top: 95px;
+      right: 0;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    .mobile-shadow-left {
+      position: absolute;
+      width: 20px;
+      height: 120px;
+      top: 95px;
+      left: 0;
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    @media(max-width: 991px) {
+      #desktop {
+        display: none;
+      }
+      #mobile {
+        display: block;
+      }
+      .row{
+        margin-top: 10px !important;
+      }
+      .speaker-card-name
+      {
+        padding-top: 10px;
+        font-size: 25px;
+      }
+      div::-webkit-scrollbar {
+      scrollbar-width: thin;
+      color: red;
+      margin-right: 20px;
+      width:10px;
+      }
+      div::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 20px;
+        margin-right: 20px;
+        scrollbar-width: 2%;
+        width: 10px;
+      }
+    }
+
+    :root {
+      --page-margin: min(2rem, 5vw);
+      color: #444;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+    }
+
+    section>* {
+      grid-column: center;
+    }
+
+    .cards-wrapper {
+      grid-column: center-start/-1;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 1rem;
+      overflow: auto;
+      padding-top: 25px;
+      padding-bottom: 1rem;
+      padding-right: 20px;
+      padding-left: 15px;
+  
+
+    }
+
+    .cards-wrapper .card {
+      display: grid;
+      place-content: center;
+      background-color: #d0f0ee;
+      color: #15928a;
+      font-size: 1.5rem;
+      height: 7rem;
+      width: 7rem;
+    }
+
+    .card {
+      border-radius: 100%;
     }
   </style>
 </head>
@@ -54,7 +164,8 @@
     <div class="container">
       <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
         <div style="font-size: 21.5px;display: flex;flex-direction: row;align-items: baseline;">
-          <font style="color: red; font-weight: 800;display: flex;flex-direction: row;align-items: end;">TED<sup>x</sup>
+          <font style="color: red; font-weight: 800;display: flex;flex-direction: row;align-items: flex-end;">
+            TED<sup>x</sup>
           </font>MITAOE
         </div><br>
         <div style="font-size: 6.8px;">
@@ -121,136 +232,171 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="row" style="margin-top: 3rem;">
-      <div class="col-lg-3" style="padding: 0px">
-        <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(1);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
+  <section id="mobile">
+    <div class="cards-wrapper">
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(1);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(2);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Chaturvedi.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(3);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Davos-1-4.jpg"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(4);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Rahul.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(5);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Srushti.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(6);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Swapnil.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(7);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+      <div class="card speaker-img-wrapper" onclick="displaySpeaker(8);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+    </div>
+    <div class="mobile-shadow-left"></div>
+    <div class="mobile-shadow-right"></div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row" style="margin-top: 3rem;">
+        <div class="col-lg-3" style="padding: 0px" id="desktop">
+          <div class="row">
+            <div class="speaker-container" onclick="displaySpeaker(1);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-container" onclick="displaySpeaker(2);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Chaturvedi.png">
+              </div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(2);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Chaturvedi.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
+          <div class="row">
+            <div class="speaker-container" onclick="displaySpeaker(3);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Davos-1-4.jpg">
+              </div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-container" onclick="displaySpeaker(4);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Rahul.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(3);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Davos-1-4.jpg"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
+          <div class="row">
+            <div class="speaker-container" onclick="displaySpeaker(5);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Srushti.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-container" onclick="displaySpeaker(6);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Swapnil.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
           </div>
-          <div class="speaker-container" onclick="displaySpeaker(4);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Rahul.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(5);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Srushti.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-container" onclick="displaySpeaker(6);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Swapnil.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="speaker-container" onclick="displaySpeaker(7);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-container" onclick="displaySpeaker(8);stopAutoChangeSpeaker();">
-            <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-name">Swapnil Joshi</div>
-          </div>
-        </div>
-      </div>
-      <img class="Xsymbol" style="height: 90vh; width: auto; top: 10%; left: 17%; max-width: 83vw;" src="assets/images/Index/Xsymbol.png">
-      <a href="index.html" class="back-botton">
-        <div class="back-symbol"><</div>
-        <div class="back-word">BACK</div>
-      </a>
-      <div class="col-lg-7">
-        <div id="1" class="speaker-card-active">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-card-info">
-            Great Film star
-          </div>
-        </div>
-        <div id="2" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Chaturvedi.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-card-info">
-            Great Film star
+          <div class="row">
+            <div class="speaker-container" onclick="displaySpeaker(7);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-container" onclick="displaySpeaker(8);stopAutoChangeSpeaker();">
+              <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-name">Swapnil Joshi</div>
+            </div>
           </div>
         </div>
-        <div id="3" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Davos-1-4.jpg"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
+        <img class="Xsymbol" 
+          src="assets/images/Index/Xsymbol.png">
+        <a href="index.html" class="back-botton">
+          <div class="back-symbol"><</div>
+          <div class="back-word">BACK</div>
+        </a>
+        <div class="col-lg-7">
+          <div id="1" class="speaker-card-active">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-          <div class="speaker-card-info">
-            Great Film star
+          <div id="2" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Chaturvedi.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-        </div>
-        <div id="4" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Rahul.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
+          <div id="3" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Davos-1-4.jpg"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-          <div class="speaker-card-info">
-            Great Film star
+          <div id="4" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Rahul.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-        </div>
-        <div id="5" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Srushti.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
+          <div id="5" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Srushti.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-          <div class="speaker-card-info">
-            Great Film star
+          <div id="6" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Swapnil.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-        </div>
-        <div id="6" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Swapnil.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
+          <div id="7" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
-          <div class="speaker-card-info">
-            Great Film star
-          </div>
-        </div>
-        <div id="7" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-card-info">
-            Great Film star
-          </div>
-        </div>
-        <div id="8" class="speaker-card">
-          <div class="speaker-card-title">
-            <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
-            <div class="speaker-card-name">Swapnil Joshi</div>
-          </div>
-          <div class="speaker-card-info">
-            Great Film star
+          <div id="8" class="speaker-card">
+            <div class="speaker-card-title">
+              <div class="speaker-card-img"><img src="assets/images/Speakers/Anshu1.png"></div>
+              <div class="speaker-card-name">Swapnil Joshi</div>
+            </div>
+            <div class="speaker-card-info">
+              Great Film star
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <div class="bottom-shadow"></div>
   <!-- Script Files -->
   <script src="css/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>
+    let PreviousSpeakerCardIndex = 1;
+    function displaySpeaker(SpeakerId) {
+      let element = document.getElementById(PreviousSpeakerCardIndex);
+      element.classList.replace("speaker-card-active", "speaker-card");
+      element = document.getElementById(SpeakerId);
+      element.classList.replace("speaker-card", "speaker-card-active");
+      PreviousSpeakerCardIndex = SpeakerId;
+    }
+    let autoChangeVar;
+    function autoChangeSpeaker() {
+      autoChangeVar = setInterval(function () { if (PreviousSpeakerCardIndex >= 8) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
+    }
+
+    function stopAutoChangeSpeaker() {
+      clearInterval(autoChangeVar);
+    }
     window.onload = autoChangeSpeaker();
   </script>
 

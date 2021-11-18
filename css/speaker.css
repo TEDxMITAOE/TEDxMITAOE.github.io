@@ -38,14 +38,21 @@
 
 .speaker-card-title {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
+}
+
+@media (max-width:1199px) {
+    .speaker-card-title {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
 
 .speaker-card-name {
     color: red;
     font-size: 50px;
+    padding-left: 1rem;
 }
 
 .speaker-card-info {

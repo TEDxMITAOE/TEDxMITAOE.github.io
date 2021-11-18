@@ -81,7 +81,7 @@
     max-width: 83vw;
 }
 
-@media (max-width:700px) {
+@media (max-width:991px) {
     .Xsymbol {
         top: 12%;
         left: 0vw;

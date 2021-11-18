@@ -27,13 +27,31 @@
     gtag('config', 'G-8B8L4R2LFQ');
   </script>
   <style>
+    .Xsymbol{
+      height: 90vh; width: auto; top: 10%; left: 17%; max-width: 83vw;
+    }
     .speaker-card-active {
       padding: 40px;
     }
-
+    @media(max-width:441){
+     
+      .Xsymbol {
+       height:88vh;
+       padding-right: 10%;
+       margin-bottom: 60%;
+      }
+ 
+    }
     @media(max-width: 782px) {
       .row {
         justify-content: space-evenly;
+      }
+
+      .Xsymbol {
+       height:max-content;
+
+       padding-right: 10%;
+       margin-bottom: 60%;
       }
 
       .speaker-card-active {
@@ -275,7 +293,8 @@
             </div>
           </div>
         </div>
-        <img class="Xsymbol" src="assets/images/Index/Xsymbol.png">
+        <img class="Xsymbol" 
+          src="assets/images/Index/Xsymbol.png">
         <a href="index.html" class="back-botton">
           <div class="back-symbol"><</div>
           <div class="back-word">BACK</div>

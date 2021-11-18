@@ -105,7 +105,6 @@
     flex-direction: row;
     justify-content: flex-start;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
     align-items: center;
     flex-wrap: wrap;
@@ -117,7 +116,6 @@
     flex-direction: row;
     justify-content: flex-end;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
     align-items: center;
     flex-wrap: wrap;

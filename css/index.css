@@ -115,6 +115,8 @@
     position: absolute;
     top: 42%;
     left: 30%;
+    cursor: pointer;
+    color: white;
 }
 
 @media (max-width:767px) {
@@ -280,7 +282,7 @@
 }
 
 .round-img-info {
-    left: 68px;
+    left: 80px;
     position: relative;
 }
 
@@ -299,12 +301,18 @@
         color: rgba(255, 255, 255, 0.9);
         font-size: 8px;
     }
+    .round-img-info {
+        left: 11vw;
+    }
 }
 
 @media (max-width:575px) {
     .round-img-hover:hover .round-img-info h6 {
         color: rgba(255, 255, 255, 0.9);
         font-size: 1.4vw;
+    }
+    .round-img-info {
+        left: 12vw;
     }
 }
 

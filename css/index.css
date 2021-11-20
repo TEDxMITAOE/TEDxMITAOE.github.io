@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Samarkan Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samarkan Normal'), url('../assets/fonts/SAMARN__.woff') format('woff');
+}
+
+.info {
+    width: 70%;
+    padding-top: 12vw;
+}
+
+@media (max-width:991px) {
+    .info {
+        padding-bottom: 25vw;
+    }
+}
+
+.book-now-box .book-now {
+    color: red;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.book-now-box {
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-top: 1px solid rgb(255, 0, 0);
+    text-align: center;
+    width: 85px;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 6px;
+}
+
+.prarambh {
+    background-image: url("../assets/images/Index/Prarambh_background.png");
+    height: 600px;
+    width: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+@media (max-width:767px) {
+    .prarambh {
+        height: 454.54px;
+        width: 500px;
+    }
+}
+
+@media (max-width:575px) {
+    .prarambh {
+        height: 86.36vw;
+        width: 95vw;
+    }
+}
+
+.prarambh .container {
+    width: 25.7%;
+    height: 28%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0 0;
+}
+
+.prarambh .container .wrapper {
+    width: 100%;
+    display: flex;
+    animation: slideshow 12s infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translateX(0);
+    }
+    12% {
+        transform: translateX(0);
+    }
+    17% {
+        transform: translateX(-100%);
+    }
+    37% {
+        transform: translateX(-100%);
+    }
+    42% {
+        transform: translateX(-200%);
+    }
+    62% {
+        transform: translateX(-200%);
+    }
+    67% {
+        transform: translateX(-300%);
+    }
+    87% {
+        transform: translateX(-300%);
+    }
+    92% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.round-img {
+    width: 100%;
+    height: 100%;
+}
+
+.prarambh-word {
+    font-family: 'Samarkan Normal';
+    font-size: 70px;
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .prarambh-word {
+        font-size: 52px;
+    }
+}
+
+@media (max-width:575px) {
+    .prarambh-word {
+        font-size: 9vw;
+    }
+}
+
+.round-img-hover {
+    position: absolute;
+    padding: 4%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 90px;
+    height: 15%;
+    width: 14%;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 250px;
+}
+
+@media (max-width:767px) {
+    .round-img-hover:hover {
+        width: 200px;
+    }
+}
+
+@media (max-width:575px) {
+    .round-img-hover:hover {
+        width: 36vw;
+    }
+}
+
+.round-img-box {
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    position: absolute;
+    top: 28%;
+    left: 26px;
+}
+
+.round-img-hover:hover .round-img-box {
+    height: 53px;
+    width: 53px;
+    top: 21%;
+    left: 18px;
+}
+
+@media (max-width:767px) {
+    .round-img-box {
+        height: 30px;
+        width: 30px;
+        left: 20px;
+    }
+    .round-img-hover:hover .round-img-box {
+        height: 39px;
+        width: 39px;
+        top: 21%;
+        left: 14px;
+    }
+}
+
+@media (max-width:575px) {
+    .round-img-box {
+        height: 6vw;
+        width: 6vw;
+        left: 3.7vw;
+    }
+    .round-img-hover:hover .round-img-box {
+        height: 58%;
+        width: 7.5vw;
+        top: 21%;
+        left: 2.8vw;
+    }
+}
+
+.round-img-sub-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.sub-box-1 {
+    height: 100%;
+    width: 20%;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.sub-box-2 {
+    height: 100%;
+    width: 20%;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.sub-box-3 {
+    height: 100%;
+    width: 20%;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.sub-box-4 {
+    height: 100%;
+    width: 20%;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.round-img-red-box {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-red-box {
+    top: 35%;
+    left: 35%;
+    height: 30%;
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+@media (max-width:767px) {
+    .round-img-hover:hover .round-img-red-box {
+        top: 35%;
+        left: 35%;
+        height: 30%;
+        width: 30%;
+        background-color: rgba(255, 0, 0, 0.9);
+    }
+}
+
+@media (max-width:575px) {
+    .round-img-hover:hover .round-img-red-box {
+        top: 35%;
+        left: 35%;
+        height: 30%;
+        width: 30%;
+        background-color: rgba(255, 0, 0, 0.9);
+    }
+}
+
+.round-img-info {
+    left: 80px;
+    position: relative;
+}
+
+.round-img-info h6 {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-info h6 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width:767px) {
+    .round-img-hover:hover .round-img-info h6 {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 8px;
+    }
+    .round-img-info {
+        left: 11vw;
+    }
+}
+
+@media (max-width:575px) {
+    .round-img-hover:hover .round-img-info h6 {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.4vw;
+    }
+    .round-img-info {
+        left: 12vw;
+    }
+}
+
+.round-img-info p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.round-img-hover:hover .round-img-info p {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width:767px) {
+    .round-img-hover:hover .round-img-info p {
+        color: rgba(255, 255, 255, 1);
+        font-size: 12px;
+    }
+}
+
+@media (max-width:575px) {
+    .round-img-hover:hover .round-img-info p {
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.3vw;
+    }
+}

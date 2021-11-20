@@ -67,7 +67,7 @@
 .speaker-card-active {
     padding: 40px;
     display: block;
-    height: 34rem;
+    height: fit-content;
     border: 1px solid red;
     border-radius: 2rem;
     background-color: black;

@@ -38,8 +38,7 @@
     border-radius: 1.7rem;
     box-shadow: 7px 7px 40px -14px red;
     color: red;
-    font-size: 1.3rem;
-    
+    font-size: 1.1rem;
     width: 14rem;
     padding: 0.4rem 0rem;
 } 
@@ -75,9 +74,9 @@
 }
 
 .team-img h1 {
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin-top: 0.8rem;
-    margin-bottom: 0;
+    margin-bottom: 0.8rem;
     width: 13rem;
     text-align: center;
 }

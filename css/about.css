@@ -71,11 +71,9 @@
   @media (max-width:441px)
   {
     .Xsymbol_about{
-      top: 12%;
-      left: 0vw;
-      width: 100vw;
-      height: auto;
-      max-width: 100vw;
+      height: 70%;
+      width: 90%;
+      margin-top: 13%;
       }
     .about{
       font-size: 9vw;

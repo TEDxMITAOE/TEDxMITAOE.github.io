@@ -16,9 +16,9 @@
 .Xsymbol_about{
     position: absolute;
     margin-top: .5%  ;
-    margin-left: 1.5%;
+   
     bottom: 0%;
-    left: -1%;
+    
     height: 85%;
     width: 40%;
   }
@@ -71,10 +71,10 @@
   @media (max-width:441px)
   {
     .Xsymbol_about{
-        height: 70%;
-        width: 90%;
-        margin-top: 13%;
-    }
+      height: 70%;
+      width: 100%;
+      margin-top: 13%;
+      }
     .about{
       font-size: 9vw;
     }

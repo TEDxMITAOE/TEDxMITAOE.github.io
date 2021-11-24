@@ -33,7 +33,7 @@
 }
 
 .prarambh {
-    background-image: url("../assets/images/Index/Prarambh_background.png");
+    background-image: url("../assets/images/index/prarambh_background.png");
     height: 600px;
     width: 660px;
     background-position: center;
@@ -68,10 +68,64 @@
 .prarambh .container .wrapper {
     width: 100%;
     display: flex;
-    animation: slideshow 12s infinite;
+    animation: slideshow7 12s infinite;
 }
 
-@keyframes slideshow {
+/* 7 images */
+@keyframes slideshow7 {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    14.28% {
+        transform: translateX(-100%);
+    }
+    24.28% {
+        transform: translateX(-100%);
+    }
+    28.57% {
+        transform: translateX(-200%);
+    }
+    38.57% {
+        transform: translateX(-200%);
+    }
+    42.85% {
+        transform: translateX(-300%);
+    }
+    52.85% {
+        transform: translateX(-300%);
+    }
+    57.14% {
+        transform: translateX(-400%);
+    }
+    67.14% {
+        transform: translateX(-400%);
+    }
+    71.42% {
+        transform: translateX(-500%);
+    }
+    81.42% {
+        transform: translateX(-500%);
+    }
+    85.71% {
+        transform: translateX(-600%);
+    }
+    95.71% {
+        transform: translateX(-600%);
+    }
+    95.71% {
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(-600%);
+    }
+}
+
+
+/* 5 images */
+@keyframes slideshow5 {
     0% {
         transform: translateX(0);
     }
@@ -103,6 +157,7 @@
         transform: translateX(-400%);
     }
 }
+
 
 .round-img {
     width: 100%;

@@ -28,9 +28,7 @@
       position: relative;
       left: 50%;
     }
-    form{
-      padding-bottom: 100px;
-    }
+    
     .navbar-toggler-icon {
       display: inline-block;
       width: 1.5em;
@@ -279,6 +277,9 @@
         color: white;
         text-align: center;
       }
+      form{
+      padding-bottom: 100px;
+    }
 
 
       .Name {
@@ -515,15 +516,15 @@
           <br>
           <div class="Name input">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="Email input">
             <label for="email">Email</label><br>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="Message input">
             <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <textarea id="message" name="message" rows="5" required maxlength="100"></textarea>
           </div>
           <br>
           <button class="Submit btn" style="color:white">Submit</button>

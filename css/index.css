@@ -394,3 +394,30 @@
         font-size: 2.3vw;
     }
 }
+
+#countdown {
+    position: fixed;
+    bottom: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    text-align: center;
+    width: 100vw;
+    height: 5vh;
+}
+@media (max-width:991px) {
+    #countdown {
+        position: relative;
+        bottom: 0;
+        top: -40px;
+        margin-bottom: -40px;
+        font-size: 30px;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.5);
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        height: 5vh;
+    }
+}

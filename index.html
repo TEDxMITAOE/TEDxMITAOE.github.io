@@ -190,17 +190,18 @@
         </div>
         <img class="Xsymbol" src="assets/images/index/xsymbol.png">
       </div>
+      <p id="countdown"></p>
       <div class="col-lg-6" style="padding: 0px;">
         <div class="prarambh">
           <div class="container" style="top: 20%;left: 9%;">
             <div class="wrapper" style="animation-delay: 0s;">
-              <img class="round-img" src="assets/images/speakers/dr_shabbir_indorewala.jpg">
+              <img class="round-img" src="assets/images/speakers/sonalee_kulkarni.jpg">
               <img class="round-img" src="assets/images/speakers/harsh_and_prachi.jpg">
               <img class="round-img" src="assets/images/speakers/abhishek_kar.jpg">
               <img class="round-img" src="assets/images/speakers/abhay_jere.jpg">
+              <img class="round-img" src="assets/images/speakers/vaishnavi_bhujbal.jpg">
               <img class="round-img" src="assets/images/speakers/dr_shabbir_indorewala.jpg">
-              <img class="round-img" src="assets/images/speakers/harsh_and_prachi.jpg">
-              <img class="round-img" src="assets/images/speakers/abhishek_kar.jpg">
+              <img class="round-img" src="assets/images/speakers/sonalee_kulkarni.jpg">
             </div>
             <!-- <div class="overlay1"><p>Speaker</p></div> -->
           </div>
@@ -226,12 +227,12 @@
           <div class="container" style="top: 20%;left: 65%;">
             <div class="wrapper" style="animation-delay: 0.75s;">
               <img class="round-img" src="assets/images/sponsors/bakul_index.jpg">
-              <img class="round-img" src="assets/images/sponsors/tulip_index.jpg">
-              <img class="round-img" src="assets/images/sponsors/talap_index.jpg">
+              <img class="round-img" src="assets/images/sponsors/microphoneindex.png">
               <img class="round-img" src="assets/images/sponsors/namova_index.png">
-              <img class="round-img" src="assets/images/sponsors/bakul_index.jpg">
               <img class="round-img" src="assets/images/sponsors/tulip_index.jpg">
-              <img class="round-img" src="assets/images/sponsors/talap_index.jpg">
+              <img class="round-img" src="assets/images/sponsors/talap.jpg">
+              <img class="round-img" src="assets/images/sponsors/bakul_index.jpg">
+              <img class="round-img" src="assets/images/sponsors/microphoneindex.png">
             </div>
             <!-- <div class="overlay1"></div> -->
           </div>
@@ -380,5 +381,35 @@
   <script src="css/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/squarefixer.js"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 5, 2021 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="countdown"
+      document.getElementById("countdown").innerHTML = "0"+days + "d " + hours + "h "
+      +'<span style="color: rgba(255,0,0,0.75); font-weight: 100">'+ minutes + "m " + seconds + "s </span>";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 </body>
 </html>

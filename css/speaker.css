@@ -25,6 +25,14 @@
     cursor: pointer;
 }
 
+.speaker-container-center {
+    text-align: center;
+    width: fit-content;
+    padding: 0 0;
+    cursor: pointer;
+    margin-left: 42%;
+}
+
 .speaker-card-img {
     border-radius: 10px;
     box-shadow: 0 0 10px red;

@@ -268,7 +268,7 @@
             </div>
           </div>
           <div class="row" style="display: none;">
-            <div class="speaker-container-center" onclick="displaySpeaker(7);stopAutoChangeSpeaker();">
+            <div class="speaker-container-center">
               <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/user.png"></div>
               <div class="speaker-name">Coming Soon</div>
             </div>
@@ -376,7 +376,7 @@
     }
     let autoChangeVar;
     function autoChangeSpeaker() {
-      autoChangeVar = setInterval(function () { if (PreviousSpeakerCardIndex >= 8) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
+      autoChangeVar = setInterval(function () { if (PreviousSpeakerCardIndex >= 6) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
     }
 
     function stopAutoChangeSpeaker() {

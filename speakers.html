@@ -9,7 +9,7 @@
   <title>SPEAKERS | TEDxMITAOE</title>
 
   <meta name="description" content="TEDxMITAOE Official Website">
-  <meta name="keywords" content="TEDxMITAOE, TEDx, MITAOE, TED, TEDxTalks, Speaker">
+  <meta name="keywords" content="TEDxMITAOE, TEDx MITAOE, TEDx, MITAOE, TED, TEDxTalks, Speaker">
   <meta name="author" content="Web Team TEDxMITAOE">
 
   <!-- Site Icons -->
@@ -225,8 +225,8 @@
       <div class="card speaker-img-wrapper" onclick="displaySpeaker(4);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/speakers/abhay_jere.jpg"></div>
       <div class="card speaker-img-wrapper" onclick="displaySpeaker(5);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/speakers/vaishnavi_bhujbal.jpg"></div>
       <div class="card speaker-img-wrapper" onclick="displaySpeaker(6);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/speakers/dr_shabbir_indorewala.jpg"></div>
-      <div class="card speaker-img-wrapper" onclick="displaySpeaker(7);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/user.png"></div>
-      <div class="card speaker-img-wrapper" onclick="displaySpeaker(8);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/user.png"></div>
+      <!-- <div class="card speaker-img-wrapper" onclick="displaySpeaker(7);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/user.png"></div> -->
+      <!-- <div class="card speaker-img-wrapper" onclick="displaySpeaker(8);stopAutoChangeSpeaker();"><img class="speaker-img" src="assets/images/user.png"></div> -->
     </div>
     <div class="mobile-shadow-left"></div>
     <div class="mobile-shadow-right"></div>
@@ -234,7 +234,7 @@
   <section>
     <div class="container">
       <div class="row" style="margin-top: 3rem;">
-        <div class="col-lg-3" style="padding: 0px" id="desktop">
+        <div class="col-lg-3" style="padding:0px; margin-top: 5%; " id="desktop">
           <div class="row">
             <div class="speaker-container" onclick="displaySpeaker(1);stopAutoChangeSpeaker();">
               <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/speakers/sonalee_kulkarni.jpg"></div>
@@ -267,15 +267,15 @@
               <div class="speaker-name">Shabbir Indorewala</div>
             </div>
           </div>
-          <div class="row">
-            <div class="speaker-container" onclick="displaySpeaker(7);stopAutoChangeSpeaker();">
+          <div class="row" style="display: none;">
+            <div class="speaker-container-center">
               <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/user.png"></div>
               <div class="speaker-name">Coming Soon</div>
             </div>
-            <div class="speaker-container" onclick="displaySpeaker(8);stopAutoChangeSpeaker();">
+            <!-- <div class="speaker-container" onclick="displaySpeaker(8);stopAutoChangeSpeaker();">
               <div class="speaker-img-wrapper"><img class="speaker-img" src="assets/images/user.png"></div>
               <div class="speaker-name">Coming Soon</div>
-            </div>
+            </div> -->
           </div>
         </div>
         <img class="Xsymbol" 
@@ -284,7 +284,7 @@
           <div class="back-symbol"><</div>
           <div class="back-word">BACK</div>
         </a>
-        <div class="col-lg-7">
+        <div class="col-lg-7" style="margin-top:4.5%;">
           <div id="1" class="speaker-card-active">
             <div class="speaker-card-title">
               <div class="speaker-card-img"><img src="assets/images/speakers/sonalee_kulkarni.jpg"></div>
@@ -348,7 +348,7 @@
               ..
             </div>
           </div>
-          <div id="8" class="speaker-card">
+          <!-- <div id="8" class="speaker-card">
             <div class="speaker-card-title">
               <div class="speaker-card-img"><img src="assets/images/user.png"></div>
               <div class="speaker-card-name">Coming Soon</div>
@@ -356,7 +356,7 @@
             <div class="speaker-card-info">
               ..
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -376,7 +376,7 @@
     }
     let autoChangeVar;
     function autoChangeSpeaker() {
-      autoChangeVar = setInterval(function () { if (PreviousSpeakerCardIndex >= 8) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
+      autoChangeVar = setInterval(function () { if (PreviousSpeakerCardIndex >= 6) { displaySpeaker(1); } else { displaySpeaker(PreviousSpeakerCardIndex + 1); } }, 3000);
     }
 
     function stopAutoChangeSpeaker() {

@@ -21,7 +21,7 @@
 .speaker-container {
     text-align: center;
     width: fit-content;
-    padding: 0 0;
+    padding: 10 10;
     cursor: pointer;
 }
 
@@ -79,7 +79,8 @@
 .speaker-card-active {
     padding: 40px;
     display: block;
-    height: fit-content;
+    height: 100%;
+    width: 100%;
     border: 1px solid red;
     border-radius: 2rem;
     background-color: black;

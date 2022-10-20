@@ -73,28 +73,31 @@
       padding: 2px;
       width: max-content;
     }
+
     i {
       color: #ff0000;
     }
-    .overlay1{
-      position: absolute; 
+
+    .overlay1 {
+      position: absolute;
       padding: auto;
-      width: 100%; 
-      top: 0px; 
-      height: 100%; 
+      width: 100%;
+      top: 0px;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0);
       transition: all 0.3s;
     }
-    .overlay1:hover
-    {
+
+    .overlay1:hover {
       padding: auto;
-      position: absolute; 
-      width: 100%; 
-      top: 0px; 
-      height: 100%; 
-      background-color: rgba(0, 0, 0, 0.8 );
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
     }
-    .overlay1 p{
+
+    .overlay1 p {
       height: 100%;
       width: 100%;
       padding-top: 80%;
@@ -106,7 +109,8 @@
       position: relative;
       transition: all 0.3s;
     }
-    .overlay1 p:hover{
+
+    .overlay1 p:hover {
       height: 100%;
       width: 100%;
       padding-top: 40%;
@@ -117,11 +121,13 @@
       text-align: center;
       position: relative;
     }
-    .overlay_new{
-        opacity: 0;
+
+    .overlay_new {
+      opacity: 0;
     }
-    .overlay_new:hover{
-        opacity: 0.7;
+
+    .overlay_new:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -129,49 +135,73 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
     <div class="container">
-    <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
-      <div style="font-size: 21.5px;display: flex;flex-direction: row;align-items: baseline;"><font style="color: red; font-weight: 800;display: flex;flex-direction: row;align-items: flex-end;">TED<sup>x</sup></font>MITAOE</div><br>
-      <div style="font-size: 6.8px;"><font style="color: red;">x</font> = independently organised TED event</div>
-    </a>
+      <a class="navbar-brand" style="line-height: 0.42; font-family: Helvetica, sans-serif;" href="index.html">
+        <div style="font-size: 21.5px;display: flex;flex-direction: row;align-items: baseline;">
+          <font style="color: red; font-weight: 800;display: flex;flex-direction: row;align-items: flex-end;">
+            TED<sup>x</sup></font>MITAOE
+        </div><br>
+        <div style="font-size: 6.8px;">
+          <font style="color: red;">x</font> = independently organised TED event
+        </div>
+      </a>
 
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#tedx" aria-controls="tedx" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" onclick="toggleNavBar();"></span>
-    </button>
-  
-    <div class="navbar-collapse collapse justify-content-end" id="tedx">
-      <ul class="navbar-nav mt-2">
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="about.html"><div>ABOUT EVENT</div><div class="nav-animation">ABOUT EVENT</div></a>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="speakers.html"><div>SPEAKERS</div><div class="nav-animation">SPEAKERS</div></a>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="sponsors.html"><div>SPONSORS</div><div class="nav-animation">SPONSORS</div></a>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="team.html"><div>MEET THE TEAM</div><div class="nav-animation">MEET THE TEAM</div></a>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="previous.html"><div>PREVIOUS EVENTS</div><div class="nav-animation">PREVIOUS EVENTS</div></a>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-          <a class="nav-link" href="contact.html"><div>CONTACT US</div><div class="nav-animation">CONTACT US</div></a>
-          </div>
-        </li>
-      </ul>
-    </div>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#tedx"
+        aria-controls="tedx" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" onclick="toggleNavBar();"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-end" id="tedx">
+        <ul class="navbar-nav mt-2">
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="about.html">
+                <div>ABOUT EVENT</div>
+                <div class="nav-animation">ABOUT EVENT</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="speakers.html">
+                <div>SPEAKERS</div>
+                <div class="nav-animation">SPEAKERS</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="sponsors.html">
+                <div>SPONSORS</div>
+                <div class="nav-animation">SPONSORS</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="team.html">
+                <div>MEET THE TEAM</div>
+                <div class="nav-animation">MEET THE TEAM</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="previous.html">
+                <div>PREVIOUS EVENTS</div>
+                <div class="nav-animation">PREVIOUS EVENTS</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <div>CONTACT US</div>
+                <div class="nav-animation">CONTACT US</div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="container">
@@ -181,7 +211,9 @@
           <div style="line-height: 1.1;">
             <div style="font-size: 20px;">
               <a href="https://goo.gl/maps/2vD3far5Sxwt5xiBA" target="_blank" style="text-decoration: none; ">
-                <span style="color: rgba(255,255,255,0.75)">Pune <img src="assets/images/index/location.png" style="height: 30px; width: 30px; margin-left: 30.25%; "></span></div></a>
+                <span style="color: rgba(255,255,255,0.75)">Pune <img src="assets/images/index/location.png"
+                    style="height: 30px; width: 30px; margin-left: 30.25%; "></span>
+            </div></a>
             <div style="font-size: 50px; color: red; margin-top: 0px;">5<sup style="font-size: 60%;">th</sup> DEC</div>
           </div>
           <div style="font-size: 15px; color: rgba(255,255,255,0.50); margin-top: 10px;">
@@ -215,27 +247,27 @@
             </div>
             <!-- <div class="overlay1"><p>Speaker</p></div> -->
           </div>
-          <div class="overlay_new"> 
-          <a href="speakers.html">
-            <div class="round-img-hover" style="top: 27%;left: 15%;">
-              <div class="round-img-box">
-                <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div>
-                  <div class="sub-box-2"></div>
+          <div class="overlay_new">
+            <a href="speakers.html">
+              <div class="round-img-hover" style="top: 27%;left: 15%;">
+                <div class="round-img-box">
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-1"></div>
+                    <div class="sub-box-2"></div>
+                  </div>
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-3"></div>
+                    <div class="sub-box-4"></div>
+                  </div>
+                  <div class="round-img-red-box"></div>
                 </div>
-                <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div>
-                  <div class="sub-box-4"></div>
+                <div class="round-img-info">
+                  <h6>2021</h6>
+                  <p>speakers</p>
                 </div>
-                <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info">
-                <h6>2021</h6>
-                <p>speakers</p>
-              </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
           <div class="container" style="top: 20%;left: 65%;">
             <div class="wrapper" style="animation-delay: 0.75s;">
               <img class="round-img" src="assets/images/sponsors/bakul_index.jpg">
@@ -249,26 +281,26 @@
             <!-- <div class="overlay1"></div> -->
           </div>
           <div class="overlay_new">
-          <a href="sponsors.html">
-            <div class="round-img-hover" style="top: 27%;left: 71%;">
-              <div class="round-img-box">
-                <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div>
-                  <div class="sub-box-2"></div>
+            <a href="sponsors.html">
+              <div class="round-img-hover" style="top: 27%;left: 71%;">
+                <div class="round-img-box">
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-1"></div>
+                    <div class="sub-box-2"></div>
+                  </div>
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-3"></div>
+                    <div class="sub-box-4"></div>
+                  </div>
+                  <div class="round-img-red-box"></div>
                 </div>
-                <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div>
-                  <div class="sub-box-4"></div>
+                <div class="round-img-info">
+                  <h6>2021</h6>
+                  <p>sponsors</p>
                 </div>
-                <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info">
-                <h6>2021</h6>
-                <p>sponsors</p>
-              </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
           <div class="container" style="left: 9%;top: 60%;">
             <div class="wrapper" style="animation-delay: 1.5s;">
               <img class="round-img" src="assets/images/team/dr_mahesh_goudar.png">
@@ -282,26 +314,26 @@
             <!-- <div class="overlay1"></div> -->
           </div>
           <div class="overlay_new">
-          <a href="team.html">
-            <div class="round-img-hover" style="left: 15%;top: 67%;">
-              <div class="round-img-box">
-                <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div>
-                  <div class="sub-box-2"></div>
+            <a href="team.html">
+              <div class="round-img-hover" style="left: 15%;top: 67%;">
+                <div class="round-img-box">
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-1"></div>
+                    <div class="sub-box-2"></div>
+                  </div>
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-3"></div>
+                    <div class="sub-box-4"></div>
+                  </div>
+                  <div class="round-img-red-box"></div>
                 </div>
-                <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div>
-                  <div class="sub-box-4"></div>
+                <div class="round-img-info">
+                  <h6>2021</h6>
+                  <p>Team</p>
                 </div>
-                <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info">
-                <h6>2021</h6>
-                <p>Team</p>
-              </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
           <div class="container" style="top: 60%;left: 65%;">
             <div class="wrapper" style="animation-delay: 2.25s;">
               <img class="round-img" src="assets/images/previous/previous_1.jpg">
@@ -310,55 +342,57 @@
               <img class="round-img" src="assets/images/previous/previous_4.jpg">
               <img class="round-img" src="assets/images/previous/previous_5.jpg">
               <img class="round-img" src="assets/images/previous/previous_2.jpg">
-              <img class="round-img" src="assets/images/previous/previous_1.jpg">  
+              <img class="round-img" src="assets/images/previous/previous_1.jpg">
             </div>
             <!-- <div class="overlay1"></div> -->
           </div>
           <div class="overlay_new">
-          <a href="previous.html">
-            <div class="round-img-hover" style="top: 67%;left: 71%;">
-              <div class="round-img-box">
-                <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div>
-                  <div class="sub-box-2"></div>
+            <a href="previous.html">
+              <div class="round-img-hover" style="top: 67%;left: 71%;">
+                <div class="round-img-box">
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-1"></div>
+                    <div class="sub-box-2"></div>
+                  </div>
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-3"></div>
+                    <div class="sub-box-4"></div>
+                  </div>
+                  <div class="round-img-red-box"></div>
                 </div>
-                <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div>
-                  <div class="sub-box-4"></div>
+                <div class="round-img-info">
+                  <h6>2019-20</h6>
+                  <p>Previous Events</p>
                 </div>
-                <div class="round-img-red-box"></div>
               </div>
-              <div class="round-img-info">
-                <h6>2019-20</h6>
-                <p>Previous Events</p>
-              </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
 
-          <a href="#"><div class="prarambh-word">prarambh</div></a>
-          <div class="overlay_new">
           <a href="#">
-            <div class="round-img-hover" style="top: 42%;left: 42.5%;" onclick="popup('tedxmitaoe-prarambh-132313');">
-              <div class="round-img-box">
-                <div class="round-img-sub-box">
-                  <div class="sub-box-1"></div>
-                  <div class="sub-box-2"></div>
-                </div>
-                <div class="round-img-sub-box">
-                  <div class="sub-box-3"></div>
-                  <div class="sub-box-4"></div>
-                </div>
-                <div class="round-img-red-box"></div>
-              </div>
-              <div class="round-img-info">
-                <h6>2021</h6>
-                <p>Book Now </p>
-                <!-- <button onclick="popup('tedxmitaoe-prarambh-132313');" style="background:none; color:white;">Book Now</button> -->
-              </div>
-            </div>
+            <div class="prarambh-word">prarambh</div>
           </a>
-        </div>
+          <div class="overlay_new">
+            <a href="#">
+              <div class="round-img-hover" style="top: 42%;left: 42.5%;" onclick="popup('tedxmitaoe-prarambh-132313');">
+                <div class="round-img-box">
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-1"></div>
+                    <div class="sub-box-2"></div>
+                  </div>
+                  <div class="round-img-sub-box">
+                    <div class="sub-box-3"></div>
+                    <div class="sub-box-4"></div>
+                  </div>
+                  <div class="round-img-red-box"></div>
+                </div>
+                <div class="round-img-info">
+                  <h6>2021</h6>
+                  <p>Book Now </p>
+                  <!-- <button onclick="popup('tedxmitaoe-prarambh-132313');" style="background:none; color:white;">Book Now</button> -->
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -405,32 +439,33 @@
   <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Dec 5, 2021 09:00:00").getTime();
-    
+
     // Update the count down every 1 second
-    var x = setInterval(function() {
-    
+    var x = setInterval(function () {
+
       // Get today's date and time
       var now = new Date().getTime();
-        
+
       // Find the distance between now and the count down date
       var distance = countDownDate - now;
-        
+
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
       // Output the result in an element with id="countdown"
-      document.getElementById("countdown").innerHTML = "0"+days + "d " + hours + "h "
-      +'<span style="color: rgba(255,0,0,0.75); font-weight: 100">'+ minutes + "m " + seconds + "s </span>";
-        
+      document.getElementById("countdown").innerHTML = "0" + days + "d " + hours + "h "
+        + '<span style="color: rgba(255,0,0,0.75); font-weight: 100">' + minutes + "m " + seconds + "s </span>";
+
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "";
       }
     }, 1000);
-    </script>
+  </script>
 </body>
+
 </html>

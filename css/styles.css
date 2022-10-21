@@ -67,6 +67,7 @@ ul {
         display: block;
     }
 }
+
 @media (max-width:991px) {
     .nav-item {
         padding: 1.5rem;
@@ -116,7 +117,8 @@ ul {
     height: 100%;
 }
 
-.btn-5:before, .btn-5:after {
+.btn-5:before,
+.btn-5:after {
     position: absolute;
     content: "";
     right: 0;
@@ -144,7 +146,8 @@ ul {
     width: 100%;
 }
 
-.btn-5 span:before, .btn-5 span:after {
+.btn-5 span:before,
+.btn-5 span:after {
     position: absolute;
     content: "";
     left: 0;
@@ -271,6 +274,7 @@ ul {
     .for_res {
         display: none;
     }
+
     .for_res2 {
         display: block;
     }
@@ -280,6 +284,7 @@ ul {
     .for_res2 {
         display: none;
     }
+
     .for_res {
         display: block;
     }

@@ -17,31 +17,36 @@
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
-.text{
+
+.text {
     font-size: 12px;
     margin-top: rem;
     width: 100%;
     text-align: justify;
 }
+
 .partner-card-info {
     font-size: 15px;
     margin-top: 7rem;
     width: 100%;
     text-align: center;
 }
-@media(max-width:411px){
- .text{
-     height:fit-content;
-     text-align:justify ;
- }
-.partner-card-info{
-    margin-top: 3rem;
-}
+
+@media(max-width:411px) {
+    .text {
+        height: fit-content;
+        text-align: justify;
+    }
+
+    .partner-card-info {
+        margin-top: 3rem;
+    }
 }
 
-.text{
+.text {
     text-decoration: none;
 }
+
 .partner img {
     width: 5rem;
 }
@@ -77,10 +82,10 @@
 }
 
 .partner-card-img {
-   
+
     width: 50%;
     height: 30%;
-    
+
 }
 
 .partner-card-img img {
@@ -90,5 +95,3 @@
     margin-top: 20%;
     overflow-y: hidden;
 }
-
-

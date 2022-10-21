@@ -1,84 +1,85 @@
 .about-event-container {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .about-event-wrapper {
-    display: flex;
-    flex-direction: column;
-    transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
 }
 
 .custom-btn {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-.Xsymbol_about{
-    position: absolute;
-    margin-top: .5%  ;
-   
-    bottom: 0%;
-    
-    height: 85%;
-    width: 40%;
-  }
+.Xsymbol_about {
+  position: absolute;
+  margin-top: .5%;
 
-  button , a:hover{
-    color: red;
-  }
+  bottom: 0%;
 
-  @media (max-width:768px)
-  {
-    .Xsymbol_about{
-        height: 100%;
-        width: 100%;
-        margin-top: 11%;
-      }
-  }
+  height: 85%;
+  width: 40%;
+}
 
-  .about{
-      color:#fff;
-      font-size: 40px;
-  }
+button,
+a:hover {
+  color: red;
+}
 
-  .event{
-      color: red;
-      font-size: 70px;
-      padding-left: 10px;
-  }  
-  
-  p{
-    margin-top: 10px;
-    color:rgba(255, 255, 255, 0.664);
-    text-align:justify;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 100 !important;
-  }
-
-  a{
-      list-style: none;
-      color: red;
-      text-decoration: none;
-  }
-
-  .col-1{
-    display: inline-block;
+@media (max-width:768px) {
+  .Xsymbol_about {
+    height: 100%;
     width: 100%;
-    margin-top: 8%; 
+    margin-top: 11%;
   }
-  
-  @media (max-width:441px)
-  {
-    .Xsymbol_about{
-      height: 70%;
-      width: 100%;
-      margin-top: 13%;
-      }
-    .about{
-      font-size: 9vw;
-    }
-    .event{
-      font-size: 17vw;
-    }  
+}
+
+.about {
+  color: #fff;
+  font-size: 40px;
+}
+
+.event {
+  color: red;
+  font-size: 70px;
+  padding-left: 10px;
+}
+
+p {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.664);
+  text-align: justify;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100 !important;
+}
+
+a {
+  list-style: none;
+  color: red;
+  text-decoration: none;
+}
+
+.col-1 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 8%;
+}
+
+@media (max-width:441px) {
+  .Xsymbol_about {
+    height: 70%;
+    width: 100%;
+    margin-top: 13%;
+  }
+
+  .about {
+    font-size: 9vw;
+  }
+
+  .event {
+    font-size: 17vw;
+  }
 }

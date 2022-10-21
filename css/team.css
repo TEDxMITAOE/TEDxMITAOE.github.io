@@ -42,6 +42,7 @@
     width: 14rem;
     padding: 0.4rem 0rem;
 }
+
 .team-botton-faculty {
     border: 0.2rem solid red;
     border-radius: 1.7rem;
@@ -50,7 +51,7 @@
     font-size: 1.1rem;
     width: 15rem;
     padding: 0.4rem 0rem;
-} 
+}
 
 .team-img {
     width: auto;
@@ -78,6 +79,7 @@
     .team-left .team-img {
         margin-left: 10%;
     }
+
     .team-right .team-img {
         margin-right: 10%;
     }
@@ -155,11 +157,11 @@
     transition: all 0.5s;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-a:hover{
+a:hover {
     color: rgb(255, 255, 255);
 }

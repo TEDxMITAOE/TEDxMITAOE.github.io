@@ -76,49 +76,64 @@
     0% {
         transform: translateX(0);
     }
+
     10% {
         transform: translateX(0);
     }
+
     14.28% {
         transform: translateX(-100%);
     }
+
     24.28% {
         transform: translateX(-100%);
     }
+
     28.57% {
         transform: translateX(-200%);
     }
+
     38.57% {
         transform: translateX(-200%);
     }
+
     42.85% {
         transform: translateX(-300%);
     }
+
     52.85% {
         transform: translateX(-300%);
     }
+
     57.14% {
         transform: translateX(-400%);
     }
+
     67.14% {
         transform: translateX(-400%);
     }
+
     71.42% {
         transform: translateX(-500%);
     }
+
     81.42% {
         transform: translateX(-500%);
     }
+
     85.71% {
         transform: translateX(-600%);
     }
+
     95.71% {
         transform: translateX(-600%);
     }
+
     95.71% {
         transform: translateX(-600%);
     }
-    100%{
+
+    100% {
         transform: translateX(-600%);
     }
 }
@@ -129,30 +144,39 @@
     0% {
         transform: translateX(0);
     }
+
     12% {
         transform: translateX(0);
     }
+
     17% {
         transform: translateX(-100%);
     }
+
     37% {
         transform: translateX(-100%);
     }
+
     42% {
         transform: translateX(-200%);
     }
+
     62% {
         transform: translateX(-200%);
     }
+
     67% {
         transform: translateX(-300%);
     }
+
     87% {
         transform: translateX(-300%);
     }
+
     92% {
         transform: translateX(-400%);
     }
+
     100% {
         transform: translateX(-400%);
     }
@@ -241,6 +265,7 @@
         width: 30px;
         left: 20px;
     }
+
     .round-img-hover:hover .round-img-box {
         height: 39px;
         width: 39px;
@@ -255,6 +280,7 @@
         width: 6vw;
         left: 3.7vw;
     }
+
     .round-img-hover:hover .round-img-box {
         height: 58%;
         width: 7.5vw;
@@ -356,6 +382,7 @@
         color: rgba(255, 255, 255, 0.9);
         font-size: 8px;
     }
+
     .round-img-info {
         left: 11vw;
     }
@@ -366,6 +393,7 @@
         color: rgba(255, 255, 255, 0.9);
         font-size: 1.4vw;
     }
+
     .round-img-info {
         left: 12vw;
     }
@@ -406,6 +434,7 @@
     width: 100vw;
     height: 5vh;
 }
+
 @media (max-width:991px) {
     #countdown {
         position: relative;
